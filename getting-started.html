@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step-by-step guide to set up website monitoring with UptimeRobot. Takes less than 5 minutes to get started.">
+    <title>Getting Started - SaaSMono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E76F51',
+                        secondary: '#F4A261',
+                        accent: '#2A9D8F',
+                        cream: '#FAF3E0',
+                        charcoal: '#264653'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5JD8D64KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F5JD8D64KK');
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">SaaSMono</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-charcoal hover:text-primary transition">Home</a>
+                    <a href="why-uptimerobot.html" class="text-charcoal hover:text-primary transition">Features</a>
+                    <a href="pricing.html" class="text-charcoal hover:text-primary transition">Pricing</a>
+                    <a href="getting-started.html" class="text-primary font-semibold">Getting Started</a>
+                    <a href="about.html" class="text-charcoal hover:text-primary transition">About</a>
+                    <a href="contact.html" class="text-charcoal hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block py-2 text-charcoal hover:text-primary transition">Home</a>
+                <a href="why-uptimerobot.html" class="block py-2 text-charcoal hover:text-primary transition">Features</a>
+                <a href="pricing.html" class="block py-2 text-charcoal hover:text-primary transition">Pricing</a>
+                <a href="getting-started.html" class="block py-2 text-primary font-semibold">Getting Started</a>
+                <a href="about.html" class="block py-2 text-charcoal hover:text-primary transition">About</a>
+                <a href="contact.html" class="block py-2 text-charcoal hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-cream to-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+                Set Up in Less Than 5 Minutes
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                No technical skills needed. Just follow these simple steps and you'll be monitoring your website in minutes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Overview -->
+    <section class="py-12 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-cream p-8 rounded-xl">
+                <h2 class="text-2xl font-bold text-charcoal mb-4">What You'll Need:</h2>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-accent mr-2">•</span>
+                        <span>Your website URL (e.g., https://yourwebsite.com)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-accent mr-2">•</span>
+                        <span>An email address</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-accent mr-2">•</span>
+                        <span>5 minutes of your time</span>
+                    </li>
+                </ul>
+                <p class="text-gray-600 mt-4">That's it. No coding, no server access, no complicated setup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step by Step Guide -->
+    <section class="py-16 bg-cream">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">Step-by-Step Setup</h2>
+            
+            <!-- Step 1 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="flex items-start">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                        1
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h3 class="text-2xl font-bold text-charcoal mb-4">Create Your Free Account</h3>
+                        <p class="text-gray-600 mb-4">
+                            Head over to UptimeRobot and click "Sign Up Free." You'll need to provide:
+                        </p>
+                        <ul class="space-y-2 text-gray-700 mb-4">
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">→</span>
+                                <span>Your email address</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">→</span>
+                                <span>A password</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">→</span>
+                                <span>Your name (optional but recommended)</span>
+                            </li>
+                        </ul>
+                        <p class="text-gray-600 mb-4">
+                            No credit card required. Verify your email, and you're in.
+                        </p>
+                        <a href="https://uptimerobot.com/?rid=YOUR_AFFILIATE_ID" target="_blank" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                            Create Account Now →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="flex items-start">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                        2
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h3 class="text-2xl font-bold text-charcoal mb-4">Add Your First Monitor</h3>
+                        <p class="text-gray-600 mb-4">
+                            Once logged in, click the "+ Add New Monitor" button. You'll see a simple form:
+                        </p>
+                        
+                        <div class="bg-cream p-6 rounded-lg mb-4">
+                            <h4 class="font-bold text-charcoal mb-3">Fill in these fields:</h4>
+                            <div class="space-y-3">
+                                <div>
+                                    <p class="font-semibold text-charcoal">Monitor Type:</p>
+                                    <p class="text-gray-600 text-sm">Choose "HTTP(s)" (this works for most websites)</p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-charcoal">Friendly Name:</p>
+                                    <p class="text-gray-600 text-sm">Something you'll recognize (e.g., "My Store Homepage")</p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-charcoal">URL:</p>
+                                    <p class="text-gray-600 text-sm">Your full website address (https://yourwebsite.com)</p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-charcoal">Monitoring Interval:</p>
+                                    <p class="text-gray-600 text-sm">Leave at "5 minutes" (free plan)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 mb-4">
+                            Click "Create Monitor" and you're done with the basics. Your website is now being monitored.
+                        </p>
+
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+                            <p class="text-sm text-gray-700">
+                                <strong>Pro tip:</strong> Start with your homepage, then add other important pages like your checkout, login, or contact pages as separate monitors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="flex items-start">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                        3
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h3 class="text-2xl font-bold text-charcoal mb-4">Set Up Alerts</h3>
+                        <p class="text-gray-600 mb-4">
+                            You need to configure how you want to be notified. Go to "My Settings" → "Alert Contacts."
+                        </p>
+
+                        <div class="space-y-4 mb-4">
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-bold text-charcoal mb-2">Email Alerts (Default)</h4>
+                                <p class="text-gray-600 text-sm">
+                                    Your signup email is automatically added. You'll get an email when your site goes down or comes back up.
+                                </p>
+                            </div>
+
+                            <div class="border-l-4 border-secondary pl-4">
+                                <h4 class="font-bold text-charcoal mb-2">SMS Alerts (Optional)</h4>
+                                <p class="text-gray-600 text-sm">
+                                    Add your phone number if you want text alerts. Good for critical websites.
+                                </p>
+                            </div>
+
+                            <div class="border-l-4 border-primary pl-4">
+                                <h4 class="font-bold text-charcoal mb-2">Other Channels (Pro Plan)</h4>
+                                <p class="text-gray-600 text-sm">
+                                    Slack, Discord, Telegram, webhooks, and more are available on paid plans.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                            <p class="text-sm text-gray-700">
+                                <strong>Important:</strong> After adding an alert contact, you need to verify it (check your email/phone for the verification link).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 (Optional) -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="flex items-start">
+                    <div class="bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                        4
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h3 class="text-2xl font-bold text-charcoal mb-4">
+                            Optional: Create a Status Page
+                            <span class="text-sm font-normal text-gray-500 ml-2">(Recommended)</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Status pages let your customers check your website's uptime history. It builds trust and reduces support tickets.
+                        </p>
+                        
+                        <div class="bg-cream p-6 rounded-lg mb-4">
+                            <h4 class="font-bold text-charcoal mb-3">How to create one:</h4>
+                            <ol class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">1.</span>
+                                    <span>Go to "Status Pages" in the sidebar</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">2.</span>
+                                    <span>Click "Add Status Page"</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">3.</span>
+                                    <span>Choose which monitors to display</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">4.</span>
+                                    <span>Customize the design (colors, logo, text)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">5.</span>
+                                    <span>Get your unique URL (e.g., status.uptimerobot.com/yourname)</span>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <p class="text-gray-600">
+                            Share this URL with customers or link it in your footer. Shows you care about transparency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Happens Next -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">What Happens Next?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-cream p-6 rounded-xl">
+                    <div class="text-4xl mb-3">✅</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">When Everything's Fine</h3>
+                    <p class="text-gray-600">
+                        UptimeRobot quietly checks your site every 5 minutes. You won't hear from it unless something goes wrong. Your dashboard shows green status.
+                    </p>
+                </div>
+
+                <div class="bg-cream p-6 rounded-xl">
+                    <div class="text-4xl mb-3">🚨</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">When Something Goes Wrong</h3>
+                    <p class="text-gray-600">
+                        You'll get an instant alert via your chosen method (email, SMS, etc.). The alert tells you what's wrong and when it happened. Fix it, and you'll get an "up" notification.
+                    </p>
+                </div>
+
+                <div class="bg-cream p-6 rounded-xl">
+                    <div class="text-4xl mb-3">📊</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Check Your Dashboard</h3>
+                    <p class="text-gray-600">
+                        Log in anytime to see your uptime percentage, response times, and incident history. Great for spotting patterns or trends.
+                    </p>
+                </div>
+
+                <div class="bg-cream p-6 rounded-xl">
+                    <div class="text-4xl mb-3">📈</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Add More Monitors</h3>
+                    <p class="text-gray-600">
+                        Once you're comfortable, add more monitors for other pages, APIs, or even competitors' sites (for comparison).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Best Practices -->
+    <section class="py-16 bg-cream">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">Tips for Success</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">💡 Start Small, Scale Up</h3>
+                    <p class="text-gray-600">
+                        Begin with your most important page (usually the homepage). Once you're comfortable, add checkout pages, login pages, and APIs.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">💡 Name Your Monitors Clearly</h3>
+                    <p class="text-gray-600">
+                        Use descriptive names like "Store Checkout Page" instead of "Monitor 1." Makes alerts easier to understand at 3am.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">💡 Test Your Alerts</h3>
+                    <p class="text-gray-600">
+                        After setting up, you can trigger a test alert to make sure notifications are working. Better to test now than find out during a real outage.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">💡 Monitor Your Competitors</h3>
+                    <p class="text-gray-600">
+                        Use spare monitors to track competitors' uptime. You might discover they have more issues than you think.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">💡 Review Weekly</h3>
+                    <p class="text-gray-600">
+                        Spend 5 minutes each week checking your uptime stats. Look for patterns like "site is slow on Mondays" or "downtime always happens at night."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">Common Questions</h2>
+            
+            <div class="space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">Why am I getting false alerts?</h3>
+                    <p class="text-gray-600">
+                        If you get an alert but your site is actually up, it might be a momentary glitch. UptimeRobot checks from multiple locations, so false positives are rare. Double-check your URL is correct.
+                    </p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">Can I monitor a site behind a login?</h3>
+                    <p class="text-gray-600">
+                        Yes, but you'll need to set up authentication in the monitor settings. UptimeRobot supports basic auth, custom headers, and more.
+                    </p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">What if my site is slow but not down?</h3>
+                    <p class="text-gray-600">
+                        UptimeRobot tracks response times. Check your dashboard for slow response times, even if the site is technically "up."
+                    </p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">How do I monitor multiple websites?</h3>
+                    <p class="text-gray-600">
+                        Just add multiple monitors. Each website gets its own monitor. You can organize them with tags or folders (Pro feature).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 bg-gradient-to-b from-cream to-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-charcoal mb-4">
+                Ready to Start?
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                You now know everything you need. Time to set up your monitoring—it really does take less than 5 minutes.
+            </p>
+            <a href="https://uptimerobot.com/?rid=YOUR_AFFILIATE_ID" target="_blank" class="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition shadow-lg">
+                Create Free Account
+            </a>
+            <p class="text-sm text-gray-500 mt-4">Questions? <a href="contact.html" class="text-primary hover:underline">Get in touch</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SaaSMono</h3>
+                    <p class="text-gray-400 text-sm">Simple website monitoring guides for small businesses and solopreneurs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Learn</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="why-uptimerobot.html" class="hover:text-white transition">Features</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <p class="text-gray-400 text-sm">This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 SaaSMono. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

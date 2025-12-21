@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about SaaSMono - our journey in website monitoring and why we recommend UptimeRobot for small businesses.">
+    <title>About - SaaSMono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E76F51',
+                        secondary: '#F4A261',
+                        accent: '#2A9D8F',
+                        cream: '#FAF3E0',
+                        charcoal: '#264653'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5JD8D64KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F5JD8D64KK');
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">SaaSMono</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-charcoal hover:text-primary transition">Home</a>
+                    <a href="why-uptimerobot.html" class="text-charcoal hover:text-primary transition">Features</a>
+                    <a href="pricing.html" class="text-charcoal hover:text-primary transition">Pricing</a>
+                    <a href="getting-started.html" class="text-charcoal hover:text-primary transition">Getting Started</a>
+                    <a href="about.html" class="text-primary font-semibold">About</a>
+                    <a href="contact.html" class="text-charcoal hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block py-2 text-charcoal hover:text-primary transition">Home</a>
+                <a href="why-uptimerobot.html" class="block py-2 text-charcoal hover:text-primary transition">Features</a>
+                <a href="pricing.html" class="block py-2 text-charcoal hover:text-primary transition">Pricing</a>
+                <a href="getting-started.html" class="block py-2 text-charcoal hover:text-primary transition">Getting Started</a>
+                <a href="about.html" class="block py-2 text-primary font-semibold">About</a>
+                <a href="contact.html" class="block py-2 text-charcoal hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-cream to-white py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+                About SaaSMono
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Documenting the journey of learning and using simple website monitoring tools
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="prose prose-lg max-w-none">
+                <!-- Our Story -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Our Story</h2>
+                    <div class="text-gray-600 space-y-4 text-lg leading-relaxed">
+                        <p>
+                            This site documents my journey learning and using simple website monitoring tools.
+                        </p>
+                        <p>
+                            I focus on practical uptime monitoring setups that are easy to understand and suitable for individuals, side projects, and small businesses.
+                        </p>
+                        <p>
+                            The goal is to explain concepts clearly, share what works, and recommend tools that I personally use or have tested.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Why Website Monitoring -->
+                <div class="mb-12 bg-cream p-8 rounded-xl">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Why Website Monitoring Matters</h2>
+                    <div class="text-gray-600 space-y-4 leading-relaxed">
+                        <p>
+                            When your website goes down, you're not just losing visitors—you're losing revenue, credibility, and customer trust. The longer it takes to discover and fix the problem, the bigger the impact.
+                        </p>
+                        <p>
+                            Most small business owners discover downtime the hard way: through customer complaints or lost sales. By then, the damage is already done.
+                        </p>
+                        <p>
+                            Website monitoring is like having a watchdog for your online presence. It alerts you the moment something goes wrong, so you can fix it before most people even notice.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Why UptimeRobot -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Why I Recommend UptimeRobot</h2>
+                    <div class="text-gray-600 space-y-4 leading-relaxed">
+                        <p>
+                            After testing various monitoring tools, UptimeRobot stands out for several reasons:
+                        </p>
+                        <ul class="space-y-3 ml-6">
+                            <li class="flex items-start">
+                                <span class="text-accent mr-3 mt-1">•</span>
+                                <span><strong>It's genuinely free to start.</strong> Unlike other tools with limited trials, UptimeRobot's free plan is actually useful for real businesses. 50 monitors with 5-minute checks covers most small business needs.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-3 mt-1">•</span>
+                                <span><strong>Simple setup.</strong> No technical expertise required. If you can copy your website URL, you can set up monitoring.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-3 mt-1">•</span>
+                                <span><strong>Reliable notifications.</strong> Multiple alert channels mean you'll actually get notified when something goes wrong.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-3 mt-1">•</span>
+                                <span><strong>Proven track record.</strong> Over 1 million websites trust UptimeRobot. It's been around for years and continues to improve.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-3 mt-1">•</span>
+                                <span><strong>Affordable upgrades.</strong> When you need more features, the pricing is reasonable. No enterprise-level costs for small business features.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Personal Experience -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">My Experience</h2>
+                    <div class="text-gray-600 space-y-4 leading-relaxed">
+                        <p>
+                            I've used UptimeRobot for monitoring various projects, from simple blogs to e-commerce stores. The peace of mind it provides is worth far more than the cost.
+                        </p>
+                        <p>
+                            There have been times when I received a downtime alert at 2am, fixed the issue within minutes, and prevented what would have been hours of undetected downtime. That alone justified the setup effort.
+                        </p>
+                        <p>
+                            The free plan handles most needs, but I've upgraded to Pro for projects where faster detection (1-minute checks) matters. The upgrade was straightforward, and the added features were immediately useful.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- What This Site Offers -->
+                <div class="mb-12 bg-cream p-8 rounded-xl">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">What This Site Offers</h2>
+                    <div class="text-gray-600 space-y-4 leading-relaxed">
+                        <p>
+                            <strong>Clear explanations:</strong> No jargon or unnecessary complexity. Just straightforward information about website monitoring.
+                        </p>
+                        <p>
+                            <strong>Practical guides:</strong> Step-by-step instructions that anyone can follow, regardless of technical background.
+                        </p>
+                        <p>
+                            <strong>Honest recommendations:</strong> I only recommend tools I've personally used and believe in. If something doesn't work well, I'll tell you.
+                        </p>
+                        <p>
+                            <strong>Real experiences:</strong> The content is based on actual use cases, not theoretical scenarios.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Transparency Statement -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Full Transparency</h2>
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-lg">
+                        <div class="text-gray-700 space-y-3 leading-relaxed">
+                            <p class="font-semibold text-charcoal">
+                                Some links on this site are affiliate links.
+                            </p>
+                            <p>
+                                This means if you sign up for UptimeRobot through my links, I may earn a commission at no extra cost to you. This helps support the site and allows me to keep creating helpful content.
+                            </p>
+                            <p>
+                                I only recommend tools I personally use or have thoroughly tested. The commission doesn't influence my honest assessment of whether a tool is right for you.
+                            </p>
+                            <p>
+                                If you'd prefer not to use affiliate links, you can always visit UptimeRobot directly. The service, features, and pricing are exactly the same either way.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Our Mission</h2>
+                    <div class="text-gray-600 space-y-4 leading-relaxed">
+                        <p>
+                            Small business owners and solopreneurs already wear too many hats. Website monitoring shouldn't be complicated or expensive.
+                        </p>
+                        <p>
+                            My goal is to help you understand website monitoring in simple terms, set it up quickly, and get back to running your business. No unnecessary complexity, no pushy sales tactics, just helpful information.
+                        </p>
+                        <p>
+                            If this site helps even one person catch downtime before their customers notice, it's worth the effort.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Values -->
+                <div class="mb-12 bg-cream p-8 rounded-xl">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">What I Believe In</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-4">💡</div>
+                            <div>
+                                <h3 class="font-bold text-charcoal mb-1">Simplicity Over Complexity</h3>
+                                <p class="text-gray-600">The best solutions are often the simplest ones. No need to overcomplicate things.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-4">🎯</div>
+                            <div>
+                                <h3 class="font-bold text-charcoal mb-1">Practical Over Theoretical</h3>
+                                <p class="text-gray-600">Focus on what actually works in real-world scenarios, not just in theory.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-4">🤝</div>
+                            <div>
+                                <h3 class="font-bold text-charcoal mb-1">Honesty Over Hype</h3>
+                                <p class="text-gray-600">Straightforward information without exaggeration or false promises.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-4">📚</div>
+                            <div>
+                                <h3 class="font-bold text-charcoal mb-1">Education Over Sales</h3>
+                                <p class="text-gray-600">Help people make informed decisions rather than pushing them toward quick conversions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Let's Connect</h2>
+                    <p class="text-gray-600 mb-6">
+                        Have questions about website monitoring? Want to share your experience? Feel free to reach out.
+                    </p>
+                    <a href="contact.html" class="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition shadow-lg">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SaaSMono</h3>
+                    <p class="text-gray-400 text-sm">Simple website monitoring guides for small businesses and solopreneurs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Learn</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="why-uptimerobot.html" class="hover:text-white transition">Features</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <p class="text-gray-400 text-sm">This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 SaaSMono. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

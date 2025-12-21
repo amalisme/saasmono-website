@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover all UptimeRobot features - from HTTP monitoring to SSL checks, keyword monitoring, and more. Perfect for small businesses.">
+    <title>Features - SaaSMono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E76F51',
+                        secondary: '#F4A261',
+                        accent: '#2A9D8F',
+                        cream: '#FAF3E0',
+                        charcoal: '#264653'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5JD8D64KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F5JD8D64KK');
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">SaaSMono</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-charcoal hover:text-primary transition">Home</a>
+                    <a href="why-uptimerobot.html" class="text-primary font-semibold">Features</a>
+                    <a href="pricing.html" class="text-charcoal hover:text-primary transition">Pricing</a>
+                    <a href="getting-started.html" class="text-charcoal hover:text-primary transition">Getting Started</a>
+                    <a href="about.html" class="text-charcoal hover:text-primary transition">About</a>
+                    <a href="contact.html" class="text-charcoal hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block py-2 text-charcoal hover:text-primary transition">Home</a>
+                <a href="why-uptimerobot.html" class="block py-2 text-primary font-semibold">Features</a>
+                <a href="pricing.html" class="block py-2 text-charcoal hover:text-primary transition">Pricing</a>
+                <a href="getting-started.html" class="block py-2 text-charcoal hover:text-primary transition">Getting Started</a>
+                <a href="about.html" class="block py-2 text-charcoal hover:text-primary transition">About</a>
+                <a href="contact.html" class="block py-2 text-charcoal hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-cream to-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+                Everything You Need to Monitor Your Website
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                UptimeRobot offers comprehensive monitoring tools that are simple enough for beginners but powerful enough for professionals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Features Grid -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">Core Monitoring Features</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- HTTP(S) Monitoring -->
+                <div class="bg-cream p-8 rounded-xl">
+                    <div class="text-4xl mb-4">🌐</div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">HTTP(S) Monitoring</h3>
+                    <p class="text-gray-600 mb-4">
+                        The most common type of monitoring. Checks if your website is accessible and responding correctly.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Monitors GET, POST, PUT, DELETE requests</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Checks response time and status codes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Supports custom headers and authentication</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Follows redirects automatically</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Keyword Monitoring -->
+                <div class="bg-cream p-8 rounded-xl">
+                    <div class="text-4xl mb-4">🔍</div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Keyword Monitoring</h3>
+                    <p class="text-gray-600 mb-4">
+                        Make sure specific content appears (or doesn't appear) on your pages. Great for catching defacements or errors.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Check if keywords exist on page</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Alert if keywords disappear</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Detect error messages or hacks</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Monitor price changes or stock status</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Ping Monitoring -->
+                <div class="bg-cream p-8 rounded-xl">
+                    <div class="text-4xl mb-4">📡</div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Ping Monitoring</h3>
+                    <p class="text-gray-600 mb-4">
+                        Simple ICMP ping checks to see if your server is online and responding to network requests.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Basic connectivity checks</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Monitors server availability</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Lightweight and fast</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Perfect for infrastructure monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Port Monitoring -->
+                <div class="bg-cream p-8 rounded-xl">
+                    <div class="text-4xl mb-4">🔌</div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Port Monitoring</h3>
+                    <p class="text-gray-600 mb-4">
+                        Check if specific ports are open and accepting connections. Essential for servers and applications.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Monitor FTP, SSH, SMTP, custom ports</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Check database accessibility</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Verify mail server status</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Monitor any TCP service</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features -->
+    <section class="py-16 bg-cream">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">More Powerful Features</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">SSL Certificate Monitoring</h3>
+                    <p class="text-gray-600 text-sm">
+                        Get alerts before your SSL certificate expires. Prevents those embarrassing "not secure" warnings.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl mb-3">📊</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Public Status Pages</h3>
+                    <p class="text-gray-600 text-sm">
+                        Show customers your uptime history with beautiful, customizable status pages. Build trust through transparency.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl mb-3">📱</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Multi-Channel Alerts</h3>
+                    <p class="text-gray-600 text-sm">
+                        Email, SMS, Slack, Telegram, Discord, webhooks, and 10+ more notification options. Get alerts where you work.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl mb-3">🌍</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Global Monitoring Locations</h3>
+                    <p class="text-gray-600 text-sm">
+                        Checks from multiple locations worldwide ensure your site is accessible to everyone, not just you.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl mb-3">⏱️</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Response Time Tracking</h3>
+                    <p class="text-gray-600 text-sm">
+                        Track how fast your website loads over time. Spot slowdowns before they become problems.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl mb-3">📈</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Uptime Reports</h3>
+                    <p class="text-gray-600 text-sm">
+                        Detailed logs and statistics. See your uptime percentage, downtime incidents, and response times.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl mb-3">🔄</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Maintenance Windows</h3>
+                    <p class="text-gray-600 text-sm">
+                        Schedule maintenance periods to pause alerts. No false alarms during planned downtime.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl mb-3">👥</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Team Collaboration</h3>
+                    <p class="text-gray-600 text-sm">
+                        Add team members with different access levels. Everyone stays informed without sharing passwords.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl mb-3">🔗</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">API Access</h3>
+                    <p class="text-gray-600 text-sm">
+                        Integrate with your tools and workflows. Full API for custom integrations and automations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">Perfect For...</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="border-l-4 border-primary pl-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-3">E-commerce Stores</h3>
+                    <p class="text-gray-600">
+                        Every minute of downtime is lost sales. Get instant alerts and keep your store running 24/7. Monitor checkout pages and payment gateways separately.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-accent pl-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-3">SaaS Applications</h3>
+                    <p class="text-gray-600">
+                        Monitor your app, API endpoints, and database connections. Show customers your reliability with public status pages.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-secondary pl-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Freelancers & Agencies</h3>
+                    <p class="text-gray-600">
+                        Manage all your clients' websites from one dashboard. Get notified before your clients do. Build trust with proactive monitoring.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-primary pl-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Content Creators & Bloggers</h3>
+                    <p class="text-gray-600">
+                        Protect your traffic and ad revenue. Monitor your site, hosting, and CDN. Keep your audience happy with consistent uptime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-16 bg-cream">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">Free vs Paid Plans</h2>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <table class="w-full">
+                    <thead class="bg-charcoal text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left">Feature</th>
+                            <th class="px-6 py-4 text-center">Free</th>
+                            <th class="px-6 py-4 text-center">Paid</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4">Number of Monitors</td>
+                            <td class="px-6 py-4 text-center">Up to 50</td>
+                            <td class="px-6 py-4 text-center">Unlimited</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4">Check Interval</td>
+                            <td class="px-6 py-4 text-center">5 minutes</td>
+                            <td class="px-6 py-4 text-center">1 minute</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Alert Channels</td>
+                            <td class="px-6 py-4 text-center">Email, SMS</td>
+                            <td class="px-6 py-4 text-center">15+ channels</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4">Status Pages</td>
+                            <td class="px-6 py-4 text-center">✓</td>
+                            <td class="px-6 py-4 text-center">✓ Custom domain</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">SSL Monitoring</td>
+                            <td class="px-6 py-4 text-center">✓</td>
+                            <td class="px-6 py-4 text-center">✓</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4">Logs Retention</td>
+                            <td class="px-6 py-4 text-center">60 days</td>
+                            <td class="px-6 py-4 text-center">1 year+</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Maintenance Windows</td>
+                            <td class="px-6 py-4 text-center">—</td>
+                            <td class="px-6 py-4 text-center">✓</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4">Advanced Reports</td>
+                            <td class="px-6 py-4 text-center">—</td>
+                            <td class="px-6 py-4 text-center">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="text-center mt-8">
+                <p class="text-gray-600 mb-4">The free plan is genuinely useful for most small businesses</p>
+                <a href="pricing.html" class="text-primary font-semibold hover:underline">
+                    View Detailed Pricing →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-charcoal mb-4">
+                Ready to Start Monitoring?
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                See why over a million websites trust UptimeRobot for their monitoring needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://uptimerobot.com/?rid=YOUR_AFFILIATE_ID" target="_blank" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition shadow-lg">
+                    Try It Free
+                </a>
+                <a href="getting-started.html" class="bg-white text-charcoal px-8 py-4 rounded-lg font-semibold hover:bg-cream transition border-2 border-gray-200">
+                    Setup Guide
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SaaSMono</h3>
+                    <p class="text-gray-400 text-sm">Simple website monitoring guides for small businesses and solopreneurs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Learn</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="why-uptimerobot.html" class="hover:text-white transition">Features</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <p class="text-gray-400 text-sm">This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 SaaSMono. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

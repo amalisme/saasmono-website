@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple website monitoring for small businesses and solopreneurs. Never miss downtime again with easy-to-use uptime monitoring.">
+    <title>SaaSMono - Simple Website Monitoring for Small Businesses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E76F51',
+                        secondary: '#F4A261',
+                        accent: '#2A9D8F',
+                        cream: '#FAF3E0',
+                        charcoal: '#264653'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5JD8D64KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F5JD8D64KK');
+    </script>
+    <style>
+        /* UPDATE YOUR AFFILIATE LINK HERE */
+        :root {
+            --affiliate-link: 'https://uptimerobot.com/?red=nurama';
+        }
+    </style>
+</head>
+<body class="bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">SaaSMono</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-charcoal hover:text-primary transition">Home</a>
+                    <a href="why-uptimerobot.html" class="text-charcoal hover:text-primary transition">Features</a>
+                    <a href="pricing.html" class="text-charcoal hover:text-primary transition">Pricing</a>
+                    <a href="getting-started.html" class="text-charcoal hover:text-primary transition">Getting Started</a>
+                    <a href="about.html" class="text-charcoal hover:text-primary transition">About</a>
+                    <a href="contact.html" class="text-charcoal hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block py-2 text-charcoal hover:text-primary transition">Home</a>
+                <a href="why-uptimerobot.html" class="block py-2 text-charcoal hover:text-primary transition">Features</a>
+                <a href="pricing.html" class="block py-2 text-charcoal hover:text-primary transition">Pricing</a>
+                <a href="getting-started.html" class="block py-2 text-charcoal hover:text-primary transition">Getting Started</a>
+                <a href="about.html" class="block py-2 text-charcoal hover:text-primary transition">About</a>
+                <a href="contact.html" class="block py-2 text-charcoal hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-cream to-white py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-charcoal mb-6 leading-tight">
+                Never Miss a Website<br>Downtime Again
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Simple monitoring that alerts you the moment your website goes down. No technical skills needed.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://uptimerobot.com/?rid=YOUR_AFFILIATE_ID" target="_blank" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition shadow-lg">
+                    Try It Free
+                </a>
+                <a href="getting-started.html" class="bg-white text-charcoal px-8 py-4 rounded-lg font-semibold hover:bg-cream transition border-2 border-gray-200">
+                    See How It Works
+                </a>
+            </div>
+            <p class="text-sm text-gray-500 mt-4">Free plan available. No credit card required.</p>
+        </div>
+    </section>
+
+    <!-- Problem/Solution -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-charcoal mb-4">
+                        Downtime Happens.<br>But It Doesn't Have to Be a Surprise.
+                    </h2>
+                    <p class="text-gray-600 mb-4">
+                        Every minute your website is down, you're losing visitors, sales, and trust. Most small business owners only discover problems when customers complain.
+                    </p>
+                    <p class="text-gray-600">
+                        What if you could know within seconds and fix issues before anyone notices?
+                    </p>
+                </div>
+                <div class="bg-cream p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">With UptimeRobot, You Get:</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Instant alerts via email, SMS, or Slack</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Checks every 5 minutes (or every minute on paid plans)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Public status pages for transparency</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">✓</span>
+                            <span>Setup takes less than 5 minutes</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits -->
+    <section class="py-16 bg-cream">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">
+                Why Small Businesses Love This
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-4">🔔</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Get Notified Instantly</h3>
+                    <p class="text-gray-600">
+                        Receive alerts through email, SMS, Slack, or 10+ other channels the moment something goes wrong.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Track Everything</h3>
+                    <p class="text-gray-600">
+                        Monitor websites, APIs, ports, keywords, and SSL certificates. All from one dashboard.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Start Free</h3>
+                    <p class="text-gray-600">
+                        The free plan actually works. Monitor up to 50 sites with 5-minute checks. Upgrade when you're ready.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-500 mb-8">Trusted by over 1,000,000 websites worldwide</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-primary mb-2">99.9%</div>
+                    <p class="text-gray-600">Uptime SLA</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-primary mb-2">5 min</div>
+                    <p class="text-gray-600">Average Setup Time</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-primary mb-2">24/7</div>
+                    <p class="text-gray-600">Automated Monitoring</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-cream">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">
+                Set It Up in Minutes
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Create Account</h3>
+                    <p class="text-gray-600">Sign up free. No credit card needed.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Add Your Website</h3>
+                    <p class="text-gray-600">Enter your URL. Choose how often to check.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">Relax & Get Alerts</h3>
+                    <p class="text-gray-600">You're done. Get notified if anything goes wrong.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="getting-started.html" class="text-primary font-semibold hover:underline">
+                    View Detailed Setup Guide →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-charcoal mb-12">
+                Common Questions
+            </h2>
+            <div class="space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">Is the free plan really free?</h3>
+                    <p class="text-gray-600">Yes. You can monitor up to 50 websites with 5-minute checks. No credit card required. Many small businesses run on the free plan indefinitely.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">Do I need technical skills?</h3>
+                    <p class="text-gray-600">Not at all. If you can copy and paste your website URL, you can set this up. It's designed for non-technical users.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">What happens when my site goes down?</h3>
+                    <p class="text-gray-600">You'll get an instant alert through your preferred channel (email, SMS, Slack, etc.). The alert includes details about what's wrong so you can fix it quickly.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold text-charcoal mb-2">Can I monitor multiple websites?</h3>
+                    <p class="text-gray-600">Absolutely. The free plan covers up to 50 monitors. Perfect if you run multiple sites or manage clients' websites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-b from-cream to-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-charcoal mb-4">
+                Sleep Better Knowing Your Website Is Watched 24/7
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                I've been using this for my sites, and it just works. Worth checking out if you're tired of downtime surprises.
+            </p>
+            <a href="https://uptimerobot.com/?rid=YOUR_AFFILIATE_ID" target="_blank" class="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition shadow-lg">
+                Try UptimeRobot Free
+            </a>
+            <p class="text-sm text-gray-500 mt-4">Takes less than 5 minutes to set up</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SaaSMono</h3>
+                    <p class="text-gray-400 text-sm">Simple website monitoring guides for small businesses and solopreneurs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Learn</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="why-uptimerobot.html" class="hover:text-white transition">Features</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <p class="text-gray-400 text-sm">This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 SaaSMono. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
