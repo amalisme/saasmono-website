@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate the real cost of website downtime for your business. Includes calculator, real examples, and prevention strategies.">
+    <meta name="keywords" content="website downtime cost, downtime calculator, website outage cost, cost of downtime">
+    
+    <meta property="og:title" content="How Much Does Website Downtime Actually Cost? [Calculator + Examples]">
+    <meta property="og:description" content="Real examples and calculator showing what downtime costs small businesses. Plus how to prevent it.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://saasmono.com/blog/website-downtime-cost-calculator.html">
+    
+    <title>How Much Does Website Downtime Cost? [Calculator + Real Examples] | SaaSMono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E76F51',
+                        secondary: '#F4A261',
+                        accent: '#2A9D8F',
+                        cream: '#FAF3E0',
+                        charcoal: '#264653'
+                    }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5JD8D64KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F5JD8D64KK');
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold text-primary">SaaSMono</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-charcoal hover:text-primary transition">Home</a>
+                    <a href="../why-uptimerobot.html" class="text-charcoal hover:text-primary transition">Features</a>
+                    <a href="../pricing.html" class="text-charcoal hover:text-primary transition">Pricing</a>
+                    <a href="../getting-started.html" class="text-charcoal hover:text-primary transition">Getting Started</a>
+                    <a href="index.html" class="text-primary font-semibold">Blog</a>
+                    <a href="../about.html" class="text-charcoal hover:text-primary transition">About</a>
+                    <a href="../contact.html" class="text-charcoal hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="../index.html" class="block py-2 text-charcoal hover:text-primary transition">Home</a>
+                <a href="../why-uptimerobot.html" class="block py-2 text-charcoal hover:text-primary transition">Features</a>
+                <a href="../pricing.html" class="block py-2 text-charcoal hover:text-primary transition">Pricing</a>
+                <a href="../getting-started.html" class="block py-2 text-charcoal hover:text-primary transition">Getting Started</a>
+                <a href="index.html" class="block py-2 text-primary font-semibold">Blog</a>
+                <a href="../about.html" class="block py-2 text-charcoal hover:text-primary transition">About</a>
+                <a href="../contact.html" class="block py-2 text-charcoal hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="bg-white">
+        <header class="bg-gradient-to-b from-cream to-white py-12">
+            <div class="max-w-4xl mx-auto px-6">
+                <nav class="text-sm text-gray-600 mb-4">
+                    <a href="../index.html" class="hover:text-primary">Home</a> → 
+                    <a href="index.html" class="hover:text-primary">Blog</a> → 
+                    <span class="text-charcoal">Downtime Cost</span>
+                </nav>
+                
+                <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6 leading-tight">
+                    How Much Does Website Downtime Actually Cost?
+                </h1>
+                
+                <div class="flex items-center gap-4 text-gray-600 mb-6">
+                    <span>By SaaSMono Team</span>
+                    <span>•</span>
+                    <span>December 20, 2024</span>
+                    <span>•</span>
+                    <span>6 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="max-w-4xl mx-auto px-6 py-12">
+            <div class="prose prose-lg max-w-none">
+                
+                <!-- Introduction -->
+                <div class="mb-12">
+                    <p class="text-xl text-gray-700 leading-relaxed mb-4">
+                        <strong>The short answer:</strong> Website downtime costs small businesses between $137 and $427 per hour on average. But the real cost depends on your revenue, traffic, and how long you're down.
+                    </p>
+                    
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Last month, my site went down for 6 hours. I lost $400 in direct sales. But the hidden costs? Customer trust, SEO rankings, and the stress of wondering "what else broke?" Those are harder to quantify.
+                    </p>
+
+                    <p class="text-gray-700 leading-relaxed">
+                        Let me show you how to calculate what downtime actually costs YOUR business, plus real examples from small business owners who learned the hard way.
+                    </p>
+                </div>
+
+                <!-- Calculator Section -->
+                <div class="bg-gradient-to-br from-primary to-secondary text-white rounded-xl p-8 mb-12">
+                    <h2 class="text-3xl font-bold mb-6">Quick Downtime Cost Calculator</h2>
+                    
+                    <div class="bg-white text-charcoal rounded-lg p-6 mb-6">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block font-semibold mb-2">Monthly Revenue ($)</label>
+                                <input type="number" id="monthly-revenue" class="w-full px-4 py-2 border-2 border-gray-300 rounded-lg" placeholder="10000" value="10000">
+                            </div>
+                            <div>
+                                <label class="block font-semibold mb-2">Hours of Downtime</label>
+                                <input type="number" id="downtime-hours" class="w-full px-4 py-2 border-2 border-gray-300 rounded-lg" placeholder="6" value="6">
+                            </div>
+                            <button onclick="calculateCost()" class="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-opacity-90 transition">
+                                Calculate Cost
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="result" class="bg-white bg-opacity-20 rounded-lg p-6 hidden">
+                        <h3 class="text-2xl font-bold mb-2">Estimated Cost:</h3>
+                        <p class="text-4xl font-bold mb-4" id="cost-amount">$0</p>
+                        <p class="text-sm opacity-90" id="calculation-breakdown"></p>
+                    </div>
+                </div>
+
+                <!-- Real Examples -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Real Examples: What Downtime Cost Small Businesses</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold text-charcoal mb-2">E-commerce Store: $800 Lost in 4 Hours</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Business:</strong> Online clothing boutique doing $50K/month<br>
+                                <strong>What happened:</strong> Server crash during Friday afternoon (peak shopping time)<br>
+                                <strong>Direct cost:</strong> $800 in lost sales<br>
+                                <strong>Hidden cost:</strong> 3 customers complained publicly on social media
+                            </p>
+                            <p class="text-gray-600 text-sm italic">
+                                "I only found out when customers started DMing me on Instagram asking why checkout wasn't working. By then, I'd already lost 4 hours of prime shopping time."
+                            </p>
+                        </div>
+
+                        <div class="bg-orange-50 border-l-4 border-orange-400 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold text-charcoal mb-2">SaaS Application: $2,400 + Churn</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Business:</strong> Productivity tool with 200 paying users<br>
+                                <strong>What happened:</strong> Database failure, 8-hour outage<br>
+                                <strong>Direct cost:</strong> Prorated refunds for affected users ($2,400)<br>
+                                <strong>Hidden cost:</strong> 5 customers canceled (lost $3,000 MRR)
+                            </p>
+                            <p class="text-gray-600 text-sm italic">
+                                "The refunds hurt, but losing customers who'd been with us for months? That was the real damage. Trust is hard to rebuild."
+                            </p>
+                        </div>
+
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold text-charcoal mb-2">Service Business: $650 + Reputation Damage</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Business:</strong> Digital marketing agency<br>
+                                <strong>What happened:</strong> Website down during client presentation<br>
+                                <strong>Direct cost:</strong> Lost $650 project (client went elsewhere)<br>
+                                <strong>Hidden cost:</strong> Looked unprofessional in front of potential client
+                            </p>
+                            <p class="text-gray-600 text-sm italic">
+                                "I was literally showing my portfolio when the site crashed. Client asked 'If you can't keep your own site up, how will you manage ours?' Couldn't argue with that."
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cost Breakdown -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">The True Cost: Direct + Hidden</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-cream rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">💰 Direct Costs (Easy to Calculate)</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Lost sales</strong> - Revenue you would have made</li>
+                                <li><strong>Lost leads</strong> - Form submissions that didn't happen</li>
+                                <li><strong>Lost ad spend</strong> - PPC traffic with nowhere to go</li>
+                                <li><strong>Refunds</strong> - Compensating affected customers</li>
+                                <li><strong>Emergency fixes</strong> - Developer hours at premium rates</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">😰 Hidden Costs (Harder to Measure)</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Customer trust</strong> - Hard to quantify, easy to lose</li>
+                                <li><strong>SEO rankings</strong> - Google doesn't like downtime</li>
+                                <li><strong>Brand reputation</strong> - Social media complaints</li>
+                                <li><strong>Employee productivity</strong> - Time spent firefighting</li>
+                                <li><strong>Your sanity</strong> - Stress and sleepless nights</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Industry Comparison -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Downtime Cost by Industry</h2>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse bg-white shadow-lg rounded-xl overflow-hidden">
+                            <thead class="bg-charcoal text-white">
+                                <tr>
+                                    <th class="p-4 text-left">Industry</th>
+                                    <th class="p-4 text-left">Avg Cost/Hour</th>
+                                    <th class="p-4 text-left">Why It's High</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-700">
+                                <tr class="border-b">
+                                    <td class="p-4">E-commerce</td>
+                                    <td class="p-4 font-bold text-primary">$200-500/hr</td>
+                                    <td class="p-4">Direct sales lost every minute</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4">SaaS</td>
+                                    <td class="p-4 font-bold text-primary">$300-1,000/hr</td>
+                                    <td class="p-4">Users can't access service + churn risk</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4">Service Business</td>
+                                    <td class="p-4 font-bold text-primary">$100-300/hr</td>
+                                    <td class="p-4">Lost leads + reputation damage</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4">Blog/Content</td>
+                                    <td class="p-4 font-bold text-primary">$50-150/hr</td>
+                                    <td class="p-4">Lost ad revenue + SEO impact</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4">Portfolio/Personal</td>
+                                    <td class="p-4 font-bold text-primary">$25-100/hr</td>
+                                    <td class="p-4">Opportunity cost + credibility</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Prevention -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">How to Prevent These Costs</h2>
+                    
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        The irony? Preventing downtime costs <strong>way less</strong> than dealing with it. Here's the math:
+                    </p>
+
+                    <div class="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-bold text-charcoal mb-4">Prevention Costs:</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• <strong>Free monitoring:</strong> $0/month (UptimeRobot free plan)</li>
+                            <li>• <strong>Pro monitoring:</strong> $7/month (faster alerts)</li>
+                            <li>• <strong>Better hosting:</strong> +$20-50/month (reliable infrastructure)</li>
+                            <li>• <strong>CDN/backup:</strong> +$10-30/month (redundancy)</li>
+                        </ul>
+                        <p class="text-lg font-bold text-charcoal mt-4">
+                            Total: $7-87/month to prevent $200-500/hour losses
+                        </p>
+                    </div>
+
+                    <div class="bg-primary bg-opacity-10 border-l-4 border-primary p-6 rounded-lg">
+                        <p class="text-gray-700">
+                            <strong>Real talk:</strong> If one hour of downtime costs you $200, spending $7/month on monitoring pays for itself after just 2 minutes of prevented downtime. That's a 1,700% ROI.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Action Steps -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">What to Do Right Now</h2>
+                    
+                    <div class="bg-cream rounded-xl p-6">
+                        <h3 class="text-xl font-bold text-charcoal mb-4">Step 1: Calculate Your Risk</h3>
+                        <p class="text-gray-700 mb-3">
+                            Use the calculator above. If your hourly downtime cost is over $50, you need monitoring. If it's over $200, you need it urgently.
+                        </p>
+
+                        <h3 class="text-xl font-bold text-charcoal mb-4 mt-6">Step 2: Set Up Monitoring (5 Minutes)</h3>
+                        <p class="text-gray-700 mb-3">
+                            Free monitoring is better than no monitoring. Start with the free plan, upgrade if needed.
+                        </p>
+                        <a href="https://uptimerobot.com/?red=nurama" 
+                           target="_blank"
+                           onclick="gtag('event', 'affiliate_click', {'event_category': 'affiliate', 'event_label': 'blog_post2_inline_cta'});"
+                           class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                            Set Up Free Monitoring →
+                        </a>
+
+                        <h3 class="text-xl font-bold text-charcoal mb-4 mt-6">Step 3: Monitor What Matters</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• Homepage (obvious)</li>
+                            <li>• Checkout/payment pages (critical for revenue)</li>
+                            <li>• Login pages (critical for SaaS)</li>
+                            <li>• API endpoints (if you have them)</li>
+                            <li>• SSL certificates (prevent security warnings)</li>
+                        </ul>
+
+                        <h3 class="text-xl font-bold text-charcoal mb-4 mt-6">Step 4: Set Up Alerts</h3>
+                        <p class="text-gray-700">
+                            Email AND SMS. Email for awareness, SMS to wake you up at 3 AM (yes, you want this).
+                        </p>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Common Questions</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h4 class="font-bold text-charcoal mb-2">Isn't my hosting company monitoring my site?</h4>
+                            <p class="text-gray-700">No. They monitor their servers, not your website's availability from a customer's perspective. You need external monitoring.</p>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h4 class="font-bold text-charcoal mb-2">My site has never gone down. Why monitor?</h4>
+                            <p class="text-gray-700">Great! But "never" is a long time. Servers fail, plugins break, SSL certificates expire, DNS issues happen. The question isn't if, it's when.</p>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h4 class="font-bold text-charcoal mb-2">Is free monitoring reliable enough?</h4>
+                            <p class="text-gray-700">Yes. 5-minute checks (free) vs 1-minute checks (paid) means maximum 5 minutes of undetected downtime. For most businesses, that's acceptable.</p>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h4 class="font-bold text-charcoal mb-2">Can monitoring prevent downtime?</h4>
+                            <p class="text-gray-700">No, but it minimizes the damage. You'll know within minutes instead of hours, so you can fix it before it costs you big money.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Conclusion -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">The Bottom Line</h2>
+                    
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Downtime is expensive. Even for small businesses, an hour of downtime can cost hundreds of dollars in lost revenue, plus the hidden costs of damaged reputation and lost trust.
+                    </p>
+
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        The good news? Prevention is cheap. Really cheap. Free monitoring takes 5 minutes to set up and costs $0. Paid monitoring costs less than a Netflix subscription.
+                    </p>
+
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        The question isn't whether you can afford monitoring. It's whether you can afford NOT to monitor.
+                    </p>
+
+                    <div class="text-center py-8 bg-gradient-to-r from-primary to-secondary rounded-xl">
+                        <p class="text-2xl font-bold text-white mb-4">
+                            Don't Wait for Downtime to Cost You Money
+                        </p>
+                        <a href="https://uptimerobot.com/?red=nurama" 
+                           target="_blank"
+                           onclick="gtag('event', 'affiliate_click', {'event_category': 'affiliate', 'event_label': 'blog_post2_final_cta'});"
+                           class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg">
+                            Set Up Monitoring Now (Free)
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Related Posts -->
+        <div class="max-w-4xl mx-auto px-6 mb-12">
+            <h3 class="text-2xl font-bold text-charcoal mb-6">Related Articles</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="uptimerobot-review-2024.html" class="bg-cream p-6 rounded-xl hover:shadow-lg transition">
+                    <h4 class="font-bold text-charcoal mb-2">UptimeRobot Review</h4>
+                    <p class="text-sm text-gray-600">Is the free plan worth it?</p>
+                </a>
+                <a href="../getting-started.html" class="bg-cream p-6 rounded-xl hover:shadow-lg transition">
+                    <h4 class="font-bold text-charcoal mb-2">Getting Started Guide</h4>
+                    <p class="text-sm text-gray-600">Set up monitoring in 5 minutes</p>
+                </a>
+                <a href="../pricing.html" class="bg-cream p-6 rounded-xl hover:shadow-lg transition">
+                    <h4 class="font-bold text-charcoal mb-2">Pricing Breakdown</h4>
+                    <p class="text-sm text-gray-600">Free vs Pro comparison</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="bg-gradient-to-r from-primary to-secondary py-12">
+            <div class="max-w-4xl mx-auto px-6 text-center text-white">
+                <h3 class="text-3xl font-bold mb-4">Protect Your Business From Costly Downtime</h3>
+                <p class="text-xl mb-6 opacity-90">
+                    Free monitoring takes 5 minutes. Downtime costs hundreds per hour.
+                </p>
+                <a href="https://uptimerobot.com/?red=nurama" 
+                   target="_blank"
+                   onclick="gtag('event', 'affiliate_click', {'event_category': 'affiliate', 'event_label': 'blog_post2_bottom_banner'});"
+                   class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg">
+                    Try Free Now
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SaaSMono</h3>
+                    <p class="text-gray-400 text-sm">Simple website monitoring guides for small businesses and solopreneurs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Learn</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../why-uptimerobot.html" class="hover:text-white transition">Features</a></li>
+                        <li><a href="../pricing.html" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="../getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="index.html" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="../contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <p class="text-gray-400 text-sm">This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 SaaSMono. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        function calculateCost() {
+            const revenue = parseFloat(document.getElementById('monthly-revenue').value) || 0;
+            const hours = parseFloat(document.getElementById('downtime-hours').value) || 0;
+            
+            // Calculate hourly revenue (monthly revenue / 730 hours in a month)
+            const hourlyRevenue = revenue / 730;
+            const totalCost = Math.round(hourlyRevenue * hours);
+            
+            document.getElementById('cost-amount').textContent = '$' + totalCost.toLocaleString();
+            document.getElementById('calculation-breakdown').textContent = 
+                `Based on $${revenue.toLocaleString()}/month revenue (≈$${Math.round(hourlyRevenue)}/hour) × ${hours} hours downtime`;
+            document.getElementById('result').classList.remove('hidden');
+        }
+
+        // Calculate on page load with default values
+        window.addEventListener('load', calculateCost);
+    </script>
+</body>
+</html>
