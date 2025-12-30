@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete monitoring checklist for small businesses. Learn exactly what pages to monitor based on your business type.">
+    <title>Complete Monitoring Checklist for Small Businesses | SaaSMono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E76F51',
+                        secondary: '#F4A261',
+                        accent: '#2A9D8F',
+                        cream: '#FAF3E0',
+                        charcoal: '#264653'
+                    }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5JD8D64KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F5JD8D64KK');
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold text-primary">SaaSMono</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-charcoal hover:text-primary transition">Home</a>
+                    <a href="../getting-started.html" class="text-charcoal hover:text-primary transition">Getting Started</a>
+                    <a href="../blog/index.html" class="text-charcoal hover:text-primary transition">Blog</a>
+                    <a href="../onboarding.html" class="text-primary font-semibold">Setup Help</a>
+                    <a href="../contact.html" class="text-charcoal hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="../index.html" class="block py-2 text-charcoal hover:text-primary transition">Home</a>
+                <a href="../getting-started.html" class="block py-2 text-charcoal hover:text-primary transition">Getting Started</a>
+                <a href="../blog/index.html" class="block py-2 text-charcoal hover:text-primary transition">Blog</a>
+                <a href="../onboarding.html" class="block py-2 text-primary font-semibold">Setup Help</a>
+                <a href="../contact.html" class="block py-2 text-charcoal hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="bg-white">
+        <header class="bg-gradient-to-b from-cream to-white py-12">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="inline-block bg-primary text-white rounded-full px-4 py-1 text-sm font-bold mb-4">
+                    ONBOARDING GUIDE #2
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6 leading-tight">
+                    Complete Monitoring Checklist for Small Businesses
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-6">
+                    Don't just monitor your homepage. Here's exactly what pages to track based on your business type, so nothing critical breaks without you knowing.
+                </p>
+
+                <div class="flex items-center gap-4 text-gray-600 text-sm">
+                    <span>⏱️ 10 minutes</span>
+                    <span>•</span>
+                    <span>📋 Comprehensive</span>
+                    <span>•</span>
+                    <span>✅ Business-specific</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="max-w-4xl mx-auto px-6 py-12">
+            <div class="prose prose-lg max-w-none">
+                
+                <!-- Introduction -->
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg mb-12">
+                    <p class="text-lg font-bold text-charcoal mb-2">
+                        ⚠️ Most People Get This Wrong
+                    </p>
+                    <p class="text-gray-700">
+                        Your homepage might be working perfectly while your checkout page is completely broken. Customers can't buy, but you have no idea because you're only monitoring the homepage. Don't let this happen to you.
+                    </p>
+                </div>
+
+                <!-- Why This Matters -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Why Monitoring Just Your Homepage Isn't Enough</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-red-50 p-6 rounded-xl border-2 border-red-200">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">❌ Real Story #1: E-commerce Site</h3>
+                            <p class="text-gray-700 text-sm">
+                                Homepage: ✅ Working<br>
+                                Product pages: ✅ Working<br>
+                                Shopping cart: ✅ Working<br>
+                                Checkout page: ❌ <strong>Broken for 6 hours</strong>
+                            </p>
+                            <p class="text-red-600 font-bold mt-3 text-sm">
+                                Result: $3,400 in lost sales. Zero alerts because only homepage was monitored.
+                            </p>
+                        </div>
+
+                        <div class="bg-red-50 p-6 rounded-xl border-2 border-red-200">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">❌ Real Story #2: SaaS Product</h3>
+                            <p class="text-gray-700 text-sm">
+                                Homepage: ✅ Working<br>
+                                Login page: ❌ <strong>Broken all weekend</strong><br>
+                                App dashboard: ✅ Working (but no one could log in)
+                            </p>
+                            <p class="text-red-600 font-bold mt-3 text-sm">
+                                Result: 47 angry customer emails. 3 cancellations. Damaged reputation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-2">✅ The Solution</p>
+                        <p class="text-gray-700">
+                            Monitor every critical page in your customer journey. This guide shows you exactly which pages to track based on your business type.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Essential Monitors -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">Essential Monitors (Everyone Needs These)</h2>
+                        <p class="opacity-90">Start here, regardless of your business type</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-cream p-6 rounded-xl border-2 border-primary">
+                            <div class="flex items-start">
+                                <span class="text-3xl mr-4">🏠</span>
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-charcoal mb-2">Homepage</h3>
+                                    <p class="text-gray-700 mb-3">
+                                        <strong>URL:</strong> https://yoursite.com
+                                    </p>
+                                    <p class="text-gray-700 mb-3">
+                                        <strong>Why:</strong> First impression. If this is down, everything else doesn't matter.
+                                    </p>
+                                    <p class="text-sm text-gray-600 bg-white p-3 rounded">
+                                        <strong>Monitor Name:</strong> "Main Site - Homepage"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl border-2 border-accent">
+                            <div class="flex items-start">
+                                <span class="text-3xl mr-4">📧</span>
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-charcoal mb-2">Contact Page</h3>
+                                    <p class="text-gray-700 mb-3">
+                                        <strong>URL:</strong> https://yoursite.com/contact
+                                    </p>
+                                    <p class="text-gray-700 mb-3">
+                                        <strong>Why:</strong> How customers reach you. If broken, you're losing leads.
+                                    </p>
+                                    <p class="text-sm text-gray-600 bg-white p-3 rounded">
+                                        <strong>Monitor Name:</strong> "Contact Page"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl border-2 border-secondary">
+                            <div class="flex items-start">
+                                <span class="text-3xl mr-4">🔒</span>
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-charcoal mb-2">SSL Certificate</h3>
+                                    <p class="text-gray-700 mb-3">
+                                        <strong>Setup:</strong> Monitor Type → SSL Certificate Monitor
+                                    </p>
+                                    <p class="text-gray-700 mb-3">
+                                        <strong>Why:</strong> Prevents "Not Secure" warnings that scare customers away.
+                                    </p>
+                                    <p class="text-sm text-gray-600 bg-white p-3 rounded">
+                                        <strong>Monitor Name:</strong> "SSL Certificate - Main Domain"
+                                    </p>
+                                    <div class="bg-blue-50 p-3 rounded mt-3">
+                                        <p class="text-sm text-gray-700">
+                                            <strong>💡 Tip:</strong> Set alert for 7 days before expiration so you have time to renew.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- E-commerce Specific -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-accent to-primary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">🛒 E-commerce Specific Monitors</h2>
+                        <p class="opacity-90">Critical for online stores (Shopify, WooCommerce, custom)</p>
+                    </div>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">⚡ Priority Level: CRITICAL</p>
+                        <p class="text-gray-700">
+                            If any of these pages break, you stop making money immediately. Monitor ALL of them.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
+                                Product Pages (Top 3-5 Sellers)
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URLs:</strong> Your 3-5 best-selling products
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> These drive most of your revenue. If they're down, sales plummet.
+                            </p>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm text-gray-700 mb-2"><strong>Examples:</strong></p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• "Product - Bestseller Widget"</li>
+                                    <li>• "Product - Premium Package"</li>
+                                    <li>• "Product - Starter Kit"</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
+                                Shopping Cart Page
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/cart
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Customers add items but can't view cart = abandoned sales.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "E-commerce - Shopping Cart"
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-red-300 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">3</span>
+                                Checkout Page (MOST CRITICAL)
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/checkout
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> This is where money happens. If broken, zero sales.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded mb-3">
+                                <strong>Monitor Name:</strong> "E-commerce - Checkout Page"
+                            </p>
+                            <div class="bg-red-50 p-4 rounded">
+                                <p class="text-sm font-bold text-red-700 mb-2">🚨 CRITICAL ALERT SETUP:</p>
+                                <p class="text-sm text-gray-700">
+                                    Set this monitor to alert via SMS + Email. You need to know IMMEDIATELY if checkout breaks.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">4</span>
+                                Payment Confirmation Page
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/order-confirmation or /thank-you
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Customers need to see their order went through. If this fails, they panic.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "E-commerce - Order Confirmation"
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">5</span>
+                                Order Status/Tracking Page
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/order-status or /track-order
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Reduces "Where's my order?" support tickets.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "E-commerce - Order Tracking"
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SaaS Specific -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-secondary to-accent text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">💻 SaaS/Web App Specific Monitors</h2>
+                        <p class="opacity-90">For subscription software and web applications</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white border-2 border-red-300 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
+                                Login Page (MOST CRITICAL)
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://app.yoursite.com/login
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> If users can't log in, they can't use your product. Instant churn risk.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded mb-3">
+                                <strong>Monitor Name:</strong> "SaaS App - Login Page"
+                            </p>
+                            <div class="bg-red-50 p-4 rounded">
+                                <p class="text-sm font-bold text-red-700 mb-2">🚨 CRITICAL ALERT SETUP:</p>
+                                <p class="text-sm text-gray-700">
+                                    SMS + Email alerts. Consider Slack integration if you have a team.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
+                                Dashboard/Main App Page
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://app.yoursite.com/dashboard
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Core functionality. If broken, users can't access features.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "SaaS App - Dashboard"
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">3</span>
+                                API Endpoints (If Applicable)
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://api.yoursite.com/v1/health or key endpoint
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> If your API is down, integrations break and customers complain.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded mb-3">
+                                <strong>Monitor Name:</strong> "API - Health Check"
+                            </p>
+                            <div class="bg-blue-50 p-3 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>💡 Advanced:</strong> Use keyword monitoring to check for {"status":"ok"} in API response.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">4</span>
+                                User Registration/Signup
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/signup
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Can't get new users if signup is broken. Lost growth.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "SaaS - User Signup Page"
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">5</span>
+                                Database Connection (Advanced)
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Setup:</strong> Keyword monitor checking for "Database connected" or similar
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Catch database issues before they cascade into bigger problems.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "Database - Connection Status"
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Service Business Specific -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-primary to-accent text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">🤝 Service Business Specific Monitors</h2>
+                        <p class="opacity-90">For agencies, consultants, freelancers, local services</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">📅 Booking/Scheduling Page</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/book or /schedule
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> How clients book consultations. If broken, you lose leads.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "Service - Booking Page"
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">📧 Contact Form</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/contact
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Primary lead generation tool. Can't afford this to be down.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "Service - Contact Form"
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">💼 Portfolio/Case Studies</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/portfolio or /case-studies
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Where prospects evaluate your work. Critical for conversions.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "Service - Portfolio Page"
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">ℹ️ About/Team Page</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/about
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Builds trust. Prospects want to know who they're working with.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "Service - About Page"
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Blog/Content Site Specific -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-accent to-secondary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">📝 Blog/Content Site Specific Monitors</h2>
+                        <p class="opacity-90">For publishers, bloggers, content creators</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">🏠 Homepage/Blog Index</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com or /blog
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Where most traffic lands. Can't lose this.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "Blog - Homepage"
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">⭐ Top 5 Most Popular Articles</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URLs:</strong> Your 5 highest-traffic posts
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> These drive most of your traffic and revenue. Monitor individually.
+                            </p>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm text-gray-700 mb-2"><strong>How to find them:</strong></p>
+                                <p class="text-sm text-gray-600">Check Google Analytics → Behavior → Site Content → All Pages</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">📡 RSS Feed</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> https://yoursite.com/feed or /rss
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> Subscribers rely on this. If broken, they miss your content.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "Blog - RSS Feed"
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">✉️ Email Signup Form</h3>
+                            <p class="text-gray-700 mb-3">
+                                <strong>URL:</strong> Page with your newsletter signup
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                <strong>Why:</strong> How you grow your audience. Can't afford this to break.
+                            </p>
+                            <p class="text-sm text-gray-600 bg-cream p-3 rounded">
+                                <strong>Monitor Name:</strong> "Blog - Email Signup"
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- How to Prioritize -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-charcoal to-primary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">🎯 How to Prioritize Your Monitors</h2>
+                        <p class="opacity-90">Can't monitor everything? Start with these priorities</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">🔴 PRIORITY 1: Revenue-Generating Pages</h3>
+                            <p class="text-gray-700 mb-3">
+                                Pages where money happens. If these break, you lose revenue immediately.
+                            </p>
+                            <div class="bg-white p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-2">Examples:</p>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• E-commerce: Checkout, cart, product pages</li>
+                                    <li>• SaaS: Login, signup, dashboard</li>
+                                    <li>• Service: Booking page, contact form</li>
+                                    <li>• Content: Highest-traffic articles with ads</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">🟡 PRIORITY 2: Customer-Facing Pages</h3>
+                            <p class="text-gray-700 mb-3">
+                                Pages customers use regularly. If broken, creates frustration and support tickets.
+                            </p>
+                            <div class="bg-white p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-2">Examples:</p>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Order tracking, account pages</li>
+                                    <li>• Support/FAQ pages</li>
+                                    <li>• Documentation</li>
+                                    <li>• Status pages</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">🟢 PRIORITY 3: Nice-to-Have Pages</h3>
+                            <p class="text-gray-700 mb-3">
+                                Important but not critical. Monitor if you have capacity.
+                            </p>
+                            <div class="bg-white p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-2">Examples:</p>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• About page, team bios</li>
+                                    <li>• Blog posts (except top performers)</li>
+                                    <li>• Archive pages</li>
+                                    <li>• Legal pages (privacy, terms)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-3">💡 Free Plan Strategy (50 Monitors)</p>
+                        <p class="text-gray-700 mb-3">
+                            Focus on Priority 1 and 2. That's typically:
+                        </p>
+                        <ul class="text-gray-700 space-y-2 ml-6">
+                            <li>• 5-10 revenue-critical pages</li>
+                            <li>• 5-10 customer-facing pages</li>
+                            <li>• Homepage, contact, SSL certificate</li>
+                            <li>• = 15-25 total monitors (well within free limit)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Setup Guide -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">📋 Step-by-Step Setup Guide</h2>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
+                                Make a List
+                            </h3>
+                            <p class="text-gray-700 ml-11 mb-3">
+                                Write down all URLs you want to monitor based on your business type above.
+                            </p>
+                            <div class="ml-11 bg-white p-3 rounded text-sm text-gray-600">
+                                <strong>Tip:</strong> Open a text file or spreadsheet. You'll use this list in step 2.
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
+                                Add Monitors One by One
+                            </h3>
+                            <p class="text-gray-700 ml-11 mb-3">
+                                For each URL on your list:
+                            </p>
+                            <ul class="ml-11 text-gray-700 space-y-2">
+                                <li>• Click "Add New Monitor" in UptimeRobot</li>
+                                <li>• Choose HTTP(s) monitor type</li>
+                                <li>• Enter URL</li>
+                                <li>• Give it a clear name (see naming conventions below)</li>
+                                <li>• Click Create</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">3</span>
+                                Use Clear Naming Conventions
+                            </h3>
+                            <p class="text-gray-700 ml-11 mb-3">
+                                Good names help you instantly understand alerts.
+                            </p>
+                            <div class="ml-11 bg-white p-4 rounded space-y-3">
+                                <div>
+                                    <p class="text-sm font-bold text-green-600 mb-1">✓ GOOD EXAMPLES:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• "E-commerce - Checkout Page"</li>
+                                        <li>• "SaaS App - Login"</li>
+                                        <li>• "Product - Best Seller Widget"</li>
+                                        <li>• "Blog - Homepage"</li>
+                                        <li>• "API - Health Check"</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-red-600 mb-1">✗ BAD EXAMPLES:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• "Monitor 1", "Monitor 2"</li>
+                                        <li>• "Website", "Page"</li>
+                                        <li>• "Test", "Check"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">4</span>
+                                Organize with Tags (Optional but Recommended)
+                            </h3>
+                            <p class="text-gray-700 ml-11 mb-3">
+                                Tags help you group monitors logically.
+                            </p>
+                            <div class="ml-11 bg-white p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-2">Example tag structure:</p>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• <span class="bg-red-100 px-2 py-1 rounded">critical</span> - Revenue pages</li>
+                                    <li>• <span class="bg-blue-100 px-2 py-1 rounded">ecommerce</span> - Store pages</li>
+                                    <li>• <span class="bg-green-100 px-2 py-1 rounded">saas</span> - App pages</li>
+                                    <li>• <span class="bg-yellow-100 px-2 py-1 rounded">content</span> - Blog pages</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">5</span>
+                                Test Each Monitor
+                            </h3>
+                            <p class="text-gray-700 ml-11 mb-3">
+                                After adding monitors, verify they work:
+                            </p>
+                            <ul class="ml-11 text-gray-700 space-y-2">
+                                <li>• Check dashboard - all should show "Up" (green)</li>
+                                <li>• Wait 5 minutes for first check to complete</li>
+                                <li>• Click on each monitor to see details</li>
+                                <li>• If any show "Down", check the URL is correct</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Reference -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">📊 Quick Reference: Monitors by Business Type</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white border-2 border-primary rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">🛒 E-commerce (10-15 monitors)</h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>✓ Homepage</li>
+                                <li>✓ Top 3-5 product pages</li>
+                                <li>✓ Shopping cart</li>
+                                <li>✓ Checkout (CRITICAL)</li>
+                                <li>✓ Order confirmation</li>
+                                <li>✓ Order tracking</li>
+                                <li>✓ Contact page</li>
+                                <li>✓ SSL certificate</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-accent rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">💻 SaaS (8-12 monitors)</h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>✓ Homepage</li>
+                                <li>✓ Login (CRITICAL)</li>
+                                <li>✓ Signup</li>
+                                <li>✓ Dashboard</li>
+                                <li>✓ API endpoints</li>
+                                <li>✓ Documentation</li>
+                                <li>✓ Status page</li>
+                                <li>✓ SSL certificate</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-secondary rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">🤝 Service Business (6-10 monitors)</h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>✓ Homepage</li>
+                                <li>✓ Booking/scheduling</li>
+                                <li>✓ Contact form</li>
+                                <li>✓ Portfolio/case studies</li>
+                                <li>✓ About page</li>
+                                <li>✓ Services page</li>
+                                <li>✓ SSL certificate</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-charcoal rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">📝 Blog/Content (8-12 monitors)</h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>✓ Homepage</li>
+                                <li>✓ Top 5 articles</li>
+                                <li>✓ RSS feed</li>
+                                <li>✓ Email signup</li>
+                                <li>✓ About page</li>
+                                <li>✓ Contact page</li>
+                                <li>✓ SSL certificate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="bg-cream p-8 rounded-xl mb-12">
+                    <h2 class="text-2xl font-bold text-charcoal mb-4">✅ Checklist: What You Should Do Now</h2>
+                    <div class="space-y-3">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Identified which business type you are</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Made a list of all URLs to monitor</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Added Priority 1 monitors (revenue pages)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Added Priority 2 monitors (customer pages)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Used clear naming conventions</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Tested all monitors show "Up" status</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- What's Next -->
+                <div class="bg-gradient-to-r from-primary to-secondary text-white p-8 rounded-xl mb-12">
+                    <h2 class="text-2xl font-bold mb-4">📚 Continue Learning</h2>
+                    <p class="mb-6 opacity-90">
+                        You've set up comprehensive monitoring. Now make sure your alerts work correctly:
+                    </p>
+                    <div class="space-y-3">
+                        <a href="alert-configuration.html" class="block bg-white text-charcoal p-4 rounded-lg hover:shadow-lg transition">
+                            <p class="font-bold text-primary mb-1">Next: Article #3 - Alert Configuration →</p>
+                            <p class="text-sm text-gray-600">Set up alerts so you actually get notified when something breaks</p>
+                        </a>
+                        <a href="first-5-minutes.html" class="block bg-white bg-opacity-20 text-white p-4 rounded-lg hover:bg-opacity-30 transition">
+                            <p class="font-bold mb-1">← Previous: First 5 Minutes</p>
+                            <p class="text-sm opacity-90">Basic setup guide</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Help CTA -->
+                <div class="bg-gradient-to-r from-accent to-primary text-white p-8 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold mb-4">Not Sure What to Monitor for YOUR Business?</h3>
+                    <p class="mb-6 opacity-90">
+                        I'll help you create a custom monitoring plan. Free for readers who signed up through my links.
+                    </p>
+                    <a href="mailto:amalin.droid@gmail.com?subject=Help Creating Monitoring Checklist&body=Hi! I need help figuring out what to monitor:%0D%0A%0D%0AMy business type: %0D%0AMy website: %0D%0AWhat I'm trying to accomplish: " 
+                       class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                        Get My Custom Plan
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SaaSMono</h3>
+                    <p class="text-gray-400 text-sm">Simple website monitoring guides for small businesses and solopreneurs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Learn</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="why-uptimerobot.html" class="hover:text-white transition">Features</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <p class="text-gray-400 text-sm">This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 SaaSMono. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
