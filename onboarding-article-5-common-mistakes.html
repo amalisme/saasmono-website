@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the 7 most common UptimeRobot mistakes and how to avoid them. Don't waste time on errors everyone makes.">
+    <title>7 UptimeRobot Mistakes Everyone Makes (And How to Avoid Them) | SaaSMono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E76F51',
+                        secondary: '#F4A261',
+                        accent: '#2A9D8F',
+                        cream: '#FAF3E0',
+                        charcoal: '#264653'
+                    }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5JD8D64KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F5JD8D64KK');
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold text-primary">SaaSMono</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-charcoal hover:text-primary transition">Home</a>
+                    <a href="../getting-started.html" class="text-charcoal hover:text-primary transition">Getting Started</a>
+                    <a href="../blog/index.html" class="text-charcoal hover:text-primary transition">Blog</a>
+                    <a href="../onboarding.html" class="text-primary font-semibold">Setup Help</a>
+                    <a href="../contact.html" class="text-charcoal hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="../index.html" class="block py-2 text-charcoal hover:text-primary transition">Home</a>
+                <a href="../getting-started.html" class="block py-2 text-charcoal hover:text-primary transition">Getting Started</a>
+                <a href="../blog/index.html" class="block py-2 text-charcoal hover:text-primary transition">Blog</a>
+                <a href="../onboarding.html" class="block py-2 text-primary font-semibold">Setup Help</a>
+                <a href="../contact.html" class="block py-2 text-charcoal hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="bg-white">
+        <header class="bg-gradient-to-b from-cream to-white py-12">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="inline-block bg-primary text-white rounded-full px-4 py-1 text-sm font-bold mb-4">
+                    ONBOARDING GUIDE #5
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6 leading-tight">
+                    7 UptimeRobot Mistakes Everyone Makes
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-6">
+                    Learn from others' mistakes instead of making them yourself. These are the most common UptimeRobot setup errors I see, and exactly how to avoid them.
+                </p>
+
+                <div class="flex items-center gap-4 text-gray-600 text-sm">
+                    <span>⏱️ 15 minutes</span>
+                    <span>•</span>
+                    <span>💡 7 mistakes + fixes</span>
+                    <span>•</span>
+                    <span>✅ Prevention tips</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="max-w-4xl mx-auto px-6 py-12">
+            <div class="prose prose-lg max-w-none">
+                
+                <!-- Introduction -->
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg mb-12">
+                    <p class="text-lg font-bold text-charcoal mb-2">
+                        ⚠️ Why This Matters
+                    </p>
+                    <p class="text-gray-700">
+                        I've helped dozens of business owners set up UptimeRobot, and I see the same mistakes over and over. Each one seems small, but they add up to a monitoring system that doesn't actually protect you. Learn these now and save yourself the headache.
+                    </p>
+                </div>
+
+                <!-- Mistake 1 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-red-500 to-primary text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="text-6xl font-bold mb-4 opacity-30">#1</div>
+                                <h2 class="text-3xl font-bold mb-2">Only Monitoring the Homepage</h2>
+                                <p class="opacity-90">The most expensive mistake</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">❌ Why It's Wrong</p>
+                        <p class="text-gray-700">
+                            Your homepage could be working perfectly while your checkout page is completely broken. Customers can browse but can't buy. You're losing sales and have no idea because you're only monitoring the homepage.
+                        </p>
+                    </div>
+
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-bold text-charcoal mb-4">💰 Real Cost Example</h3>
+                        <div class="space-y-4">
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-2">E-commerce Store:</p>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Homepage: ✅ Working fine</li>
+                                    <li>• Checkout: ❌ Broken for 6 hours</li>
+                                    <li>• Average sales: $600/hour</li>
+                                    <li>• <strong class="text-red-600">Lost revenue: $3,600</strong></li>
+                                </ul>
+                            </div>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-2">SaaS Product:</p>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Homepage: ✅ Working fine</li>
+                                    <li>• Login: ❌ Down all weekend</li>
+                                    <li>• Result: 47 angry support emails</li>
+                                    <li>• <strong class="text-red-600">3 customers canceled</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded">
+                        <p class="font-bold text-charcoal mb-3">✅ How to Fix It</p>
+                        <p class="text-gray-700 mb-4">
+                            Monitor every critical step in your customer journey:
+                        </p>
+                        <ul class="space-y-2 text-gray-700 ml-6">
+                            <li><strong>E-commerce:</strong> Homepage, product pages, cart, checkout, confirmation</li>
+                            <li><strong>SaaS:</strong> Homepage, login, signup, dashboard, API</li>
+                            <li><strong>Service Business:</strong> Homepage, booking page, contact form, portfolio</li>
+                            <li><strong>Content Site:</strong> Homepage, top articles, RSS feed, email signup</li>
+                        </ul>
+                        <div class="mt-4 bg-white p-3 rounded">
+                            <p class="text-sm text-gray-600">
+                                <strong>👉 Action:</strong> <a href="monitoring-checklist.html" class="text-primary underline">Use our monitoring checklist</a> to identify all critical pages
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mistake 2 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-orange-500 to-secondary text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="text-6xl font-bold mb-4 opacity-30">#2</div>
+                                <h2 class="text-3xl font-bold mb-2">Not Verifying Alert Contacts</h2>
+                                <p class="opacity-90">Monitoring without notifications is useless</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">❌ Why It's Wrong</p>
+                        <p class="text-gray-700">
+                            If your email isn't verified, alerts go nowhere. UptimeRobot is monitoring your site and detecting downtime, but you never find out. Your site could be down for hours or days without you knowing.
+                        </p>
+                    </div>
+
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-bold text-charcoal mb-4">🤦 How This Happens</h3>
+                        <div class="space-y-3">
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-1">Scenario 1: Verification Email in Spam</p>
+                                <p class="text-sm text-gray-700">The verification email lands in spam. You never see it. You assume alerts are working. They're not.</p>
+                            </div>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-1">Scenario 2: Typo in Email Address</p>
+                                <p class="text-sm text-gray-700">You typed "gmail.con" instead of ".com". Verification email bounces. You don't notice the error.</p>
+                            </div>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-1">Scenario 3: "I'll Do It Later"</p>
+                                <p class="text-sm text-gray-700">You skip verification thinking you'll come back to it. You forget. Weeks go by with zero alerts.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded">
+                        <p class="font-bold text-charcoal mb-3">✅ How to Fix It</p>
+                        <ol class="space-y-2 text-gray-700 ml-6">
+                            <li><strong>1. Check verification status NOW:</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• Go to My Settings → Alert Contacts</li>
+                                    <li>• Look for green checkmark next to email</li>
+                                    <li>• If no checkmark = NOT verified</li>
+                                </ul>
+                            </li>
+                            <li><strong>2. Find verification email:</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• Check inbox for "uptimerobot"</li>
+                                    <li>• Check spam/junk folder</li>
+                                    <li>• Search for "verify your email"</li>
+                                </ul>
+                            </li>
+                            <li><strong>3. Resend if needed:</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• Alert Contacts → Resend Verification</li>
+                                    <li>• Wait 5 minutes</li>
+                                    <li>• Check spam again</li>
+                                </ul>
+                            </li>
+                            <li><strong>4. Test alerts:</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• Send test alert from any monitor</li>
+                                    <li>• Verify you received it</li>
+                                    <li>• Don't assume – actually test!</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Mistake 3 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-yellow-500 to-accent text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="text-6xl font-bold mb-4 opacity-30">#3</div>
+                                <h2 class="text-3xl font-bold mb-2">Using Generic Monitor Names</h2>
+                                <p class="opacity-90">Confusing yourself when it matters most</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">❌ Why It's Wrong</p>
+                        <p class="text-gray-700 mb-4">
+                            At 3 AM, you get an alert: "Monitor 1 is down." Which page is that? Homepage? Checkout? Login? You waste precious minutes trying to figure it out while customers are affected.
+                        </p>
+                        <div class="bg-white p-4 rounded">
+                            <p class="text-sm font-bold text-red-600 mb-2">Bad Examples:</p>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• "Monitor 1", "Monitor 2", "Monitor 3"</li>
+                                <li>• "Website", "Page", "Site"</li>
+                                <li>• "Test", "Check", "URL"</li>
+                                <li>• "Main", "Secondary", "Backup"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded">
+                        <p class="font-bold text-charcoal mb-3">✅ How to Fix It</p>
+                        <p class="text-gray-700 mb-4">
+                            Use descriptive names that instantly tell you what's down:
+                        </p>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded">
+                                <p class="text-sm font-bold text-green-600 mb-2">✓ Good Examples:</p>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• "Main Site - Homepage"</li>
+                                    <li>• "E-commerce - Checkout Page"</li>
+                                    <li>• "SaaS App - Login Page"</li>
+                                    <li>• "Blog - Homepage Feed"</li>
+                                    <li>• "Product - Best Seller Widget"</li>
+                                    <li>• "API - Health Check Endpoint"</li>
+                                </ul>
+                            </div>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-2">Naming Convention Formula:</p>
+                                <p class="text-sm text-gray-700">[Business Type] - [Page Function]</p>
+                                <p class="text-xs text-gray-600 mt-2">Examples: "E-commerce - Cart", "SaaS - Dashboard", "Service - Booking Form"</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mistake 4 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-accent to-primary text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="text-6xl font-bold mb-4 opacity-30">#4</div>
+                                <h2 class="text-3xl font-bold mb-2">Forgetting SSL Monitoring</h2>
+                                <p class="opacity-90">Surprising customers with security warnings</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">❌ Why It's Wrong</p>
+                        <p class="text-gray-700 mb-4">
+                            Your SSL certificate expires. Customers suddenly see "Not Secure" warnings in their browser. They panic, assume your site is hacked, and leave. You lose trust and sales.
+                        </p>
+                        <div class="bg-white p-4 rounded">
+                            <p class="text-sm font-bold text-charcoal mb-2">What Customers See:</p>
+                            <div class="border-2 border-red-300 p-3 rounded bg-red-50">
+                                <p class="text-sm text-red-700 font-bold">⚠️ Not Secure</p>
+                                <p class="text-xs text-gray-700 mt-1">Your connection to this site is not secure. You should not enter any sensitive information on this site.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-bold text-charcoal mb-4">🤷 Why People Forget</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><strong>• Auto-renewal usually works:</strong> So you forget SSL even exists</li>
+                            <li><strong>• Until it doesn't:</strong> Credit card expires, payment fails, certificate lapses</li>
+                            <li><strong>• Sudden panic:</strong> You find out when customers complain</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded">
+                        <p class="font-bold text-charcoal mb-3">✅ How to Fix It</p>
+                        <ol class="space-y-3 text-gray-700 ml-6">
+                            <li><strong>1. Add SSL Certificate Monitor:</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• Add New Monitor → SSL Certificate</li>
+                                    <li>• Enter domain (no https://)</li>
+                                    <li>• Name: "SSL Certificate - Main Domain"</li>
+                                </ul>
+                            </li>
+                            <li><strong>2. Set Alert Timing:</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• Alert 7 days before expiration (minimum)</li>
+                                    <li>• Better: 14 days (more time to fix)</li>
+                                    <li>• Best: 30 days (plenty of buffer)</li>
+                                </ul>
+                            </li>
+                            <li><strong>3. Check Expiration Date:</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• View monitor details</li>
+                                    <li>• See when SSL expires</li>
+                                    <li>• Add reminder to calendar</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Mistake 5 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-purple-500 to-secondary text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="text-6xl font-bold mb-4 opacity-30">#5</div>
+                                <h2 class="text-3xl font-bold mb-2">No Status Page for Customers</h2>
+                                <p class="opacity-90">Missing an easy trust-building opportunity</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">❌ Why It's Wrong</p>
+                        <p class="text-gray-700 mb-4">
+                            When something breaks, customers flood support: "Is it just me?" "Are you down?" "What's going on?" A public status page answers these questions automatically and shows transparency.
+                        </p>
+                        <div class="bg-white p-4 rounded">
+                            <p class="text-sm font-bold text-charcoal mb-2">Without Status Page:</p>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• 20+ "is it down?" support emails</li>
+                                <li>• Customers assume you're unaware</li>
+                                <li>• No way to communicate fixes</li>
+                                <li>• Lost trust and credibility</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-3">✅ How to Fix It</p>
+                        <ol class="space-y-3 text-gray-700 ml-6">
+                            <li><strong>1. Create Status Page (10 minutes):</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• Go to Status Pages → Add New</li>
+                                    <li>• Choose friendly URL slug</li>
+                                    <li>• Select customer-facing monitors only</li>
+                                    <li>• Customize design with logo/colors</li>
+                                </ul>
+                            </li>
+                            <li><strong>2. Share It Everywhere:</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• Add to website footer</li>
+                                    <li>• Include in support/help pages</li>
+                                    <li>• Put in email signature</li>
+                                    <li>• Share in social media bio</li>
+                                </ul>
+                            </li>
+                            <li><strong>3. During Incidents:</strong>
+                                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                                    <li>• Point customers to status page</li>
+                                    <li>• Post updates there</li>
+                                    <li>• Show you're on it</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded">
+                        <p class="font-bold text-charcoal mb-2">💡 Pro Tip: The Trust Factor</p>
+                        <p class="text-gray-700">
+                            Even when everything's working, a status page shows professionalism. Customers see you're monitoring, prepared, and transparent. This builds confidence in your service.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Mistake 6 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-pink-500 to-primary text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="text-6xl font-bold mb-4 opacity-30">#6</div>
+                                <h2 class="text-3xl font-bold mb-2">"Set It and Forget It" Mentality</h2>
+                                <p class="opacity-90">Monitoring needs maintenance too</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">❌ Why It's Wrong</p>
+                        <p class="text-gray-700 mb-4">
+                            You set up monitoring once and never look at it again. Meanwhile:
+                        </p>
+                        <ul class="text-gray-700 space-y-2 ml-6">
+                            <li>• You launch new features (not monitored)</li>
+                            <li>• You change URLs (monitors break)</li>
+                            <li>• You redesign pages (monitoring becomes irrelevant)</li>
+                            <li>• Alert contacts change jobs (alerts go nowhere)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-bold text-charcoal mb-4">📉 What Happens Over Time</h3>
+                        <div class="space-y-3">
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-1">Month 1: Perfect Setup</p>
+                                <p class="text-sm text-gray-700">Everything monitored correctly, alerts working, dashboard checked daily.</p>
+                            </div>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-1">Month 3: Starting to Drift</p>
+                                <p class="text-sm text-gray-700">Launched 2 new features (not monitored). Dashboard checked weekly.</p>
+                            </div>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-1">Month 6: Degraded</p>
+                                <p class="text-sm text-gray-700">5 monitors pointing to old URLs. One alert email bouncing. Dashboard forgotten.</p>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded border-2 border-red-200">
+                                <p class="text-sm font-bold text-red-600 mb-1">Month 12: False Security</p>
+                                <p class="text-sm text-gray-700">Half your monitors are broken or irrelevant. You think you're protected. You're not.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded">
+                        <p class="font-bold text-charcoal mb-3">✅ How to Fix It</p>
+                        <p class="text-gray-700 mb-4">
+                            Create a maintenance schedule:
+                        </p>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded">
+                                <p class="font-bold text-charcoal mb-2">📅 Weekly (5 minutes):</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• Check dashboard</li>
+                                    <li>• Review any downtime incidents</li>
+                                    <li>• Verify all monitors show "Up"</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-4 rounded">
+                                <p class="font-bold text-charcoal mb-2">📅 Monthly (15 minutes):</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• Review all monitor names and URLs</li>
+                                    <li>• Check alert contacts still valid</li>
+                                    <li>• Test alerts (send test notification)</li>
+                                    <li>• Add monitors for new features</li>
+                                    <li>• Remove outdated monitors</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-4 rounded">
+                                <p class="font-bold text-charcoal mb-2">📅 Quarterly (30 minutes):</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• Full audit of all monitors</li>
+                                    <li>• Review uptime statistics</li>
+                                    <li>• Adjust thresholds based on false positives</li>
+                                    <li>• Update status page design</li>
+                                    <li>• Review if Pro upgrade needed</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4 bg-blue-50 p-3 rounded">
+                            <p class="text-sm text-gray-700">
+                                <strong>💡 Pro Tip:</strong> Set calendar reminders NOW. Put "UptimeRobot Maintenance" on your calendar with these intervals. Don't rely on memory.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mistake 7 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-indigo-500 to-accent text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="text-6xl font-bold mb-4 opacity-30">#7</div>
+                                <h2 class="text-3xl font-bold mb-2">Wrong Alert Threshold Settings</h2>
+                                <p class="opacity-90">Either alert fatigue or missed emergencies</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">❌ Why It's Wrong</p>
+                        <p class="text-gray-700 mb-4">
+                            Two opposite problems from the same mistake:
+                        </p>
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded">
+                                <p class="text-sm font-bold text-red-600 mb-1">Problem 1: Threshold Too Low (1 check)</p>
+                                <p class="text-sm text-gray-700">Every tiny network blip triggers an alert. You get 5 false alarms per day. You start ignoring them. Then a real emergency happens and you miss it.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded">
+                                <p class="text-sm font-bold text-red-600 mb-1">Problem 2: Threshold Too High (5+ checks)</p>
+                                <p class="text-sm text-gray-700">Your checkout breaks. 25 minutes pass before you get an alert. Customers already gave up and left. Sales lost.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-3">✅ How to Fix It</p>
+                        <p class="text-gray-700 mb-4">
+                            Use the right threshold for each situation:
+                        </p>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded border-2 border-green-300">
+                                <p class="font-bold text-charcoal mb-2">✓ Best for Most: 2 Checks</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• Filters out random blips</li>
+                                    <li>• Still alerts quickly (5-10 min with 5-min intervals)</li>
+                                    <li>• Good balance of accuracy and speed</li>
+                                    <li>• <strong>Use for:</strong> Most monitors</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-4 rounded border-2 border-yellow-300">
+                                <p class="font-bold text-charcoal mb-2">⚡ For Critical Pages: 1 Check (Use Sparingly)</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• Instant alerts (no delay)</li>
+                                    <li>• More false positives</li>
+                                    <li>• <strong>Use for:</strong> Checkout, payment processing only</li>
+                                    <li>• <strong>Warning:</strong> Expect occasional false alarms</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-4 rounded border-2 border-blue-300">
+                                <p class="font-bold text-charcoal mb-2">🐢 For Non-Critical: 3 Checks</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• Very few false positives</li>
+                                    <li>• Takes longer to alert (10-15 min)</li>
+                                    <li>• <strong>Use for:</strong> Blog posts, about pages, secondary features</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded">
+                        <p class="font-bold text-charcoal mb-3">💡 How to Adjust Over Time</p>
+                        <ol class="text-gray-700 space-y-2 ml-6">
+                            <li><strong>1. Start with 2 checks for everything</strong></li>
+                            <li><strong>2. Track false positives for a week:</strong>
+                                <ul class="ml-4 mt-1 space-y-1 text-sm">
+                                    <li>• Getting lots of false alarms? Increase to 3 checks</li>
+                                    <li>• No false alarms? You're good</li>
+                                </ul>
+                            </li>
+                            <li><strong>3. Adjust critical monitors:</strong>
+                                <ul class="ml-4 mt-1 space-y-1 text-sm">
+                                    <li>• Checkout/payment: Consider 1 check</li>
+                                    <li>• Accept you'll get occasional false alarms</li>
+                                    <li>• Worth it for instant notification</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Quick Reference -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">📋 Quick Reference: 7 Mistakes Checklist</h2>
+                    
+                    <div class="bg-cream p-8 rounded-xl">
+                        <p class="text-gray-700 mb-6">Use this to audit your current setup:</p>
+                        <div class="space-y-3">
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mr-3 w-5 h-5 mt-1">
+                                <span class="text-gray-700">
+                                    <strong>❌ Mistake #1:</strong> I'm monitoring MORE than just the homepage (critical pages covered)
+                                </span>
+                            </label>
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mr-3 w-5 h-5 mt-1">
+                                <span class="text-gray-700">
+                                    <strong>❌ Mistake #2:</strong> My email is verified (green checkmark visible) and tested
+                                </span>
+                            </label>
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mr-3 w-5 h-5 mt-1">
+                                <span class="text-gray-700">
+                                    <strong>❌ Mistake #3:</strong> All monitors have descriptive names (not "Monitor 1, 2, 3")
+                                </span>
+                            </label>
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mr-3 w-5 h-5 mt-1">
+                                <span class="text-gray-700">
+                                    <strong>❌ Mistake #4:</strong> SSL certificate is being monitored with proper alerts
+                                </span>
+                            </label>
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mr-3 w-5 h-5 mt-1">
+                                <span class="text-gray-700">
+                                    <strong>❌ Mistake #5:</strong> I have a status page created and shared with customers
+                                </span>
+                            </label>
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mr-3 w-5 h-5 mt-1">
+                                <span class="text-gray-700">
+                                    <strong>❌ Mistake #6:</strong> I have calendar reminders for regular maintenance
+                                </span>
+                            </label>
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mr-3 w-5 h-5 mt-1">
+                                <span class="text-gray-700">
+                                    <strong>❌ Mistake #7:</strong> Alert thresholds are set appropriately (2 checks for most)
+                                </span>
+                            </label>
+                        </div>
+                        <div class="mt-6 p-4 bg-white rounded">
+                            <p class="font-bold text-charcoal mb-2">✅ Goal: Check All 7 Boxes</p>
+                            <p class="text-sm text-gray-700">If any boxes are unchecked, go fix those mistakes NOW. Your future self will thank you.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Prevention Tips -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">🛡️ Prevention: Stop Mistakes Before They Happen</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white border-2 border-primary rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">1. Use a Setup Checklist</h3>
+                            <p class="text-gray-700 mb-3">
+                                Don't rely on memory. Use our <a href="week-1-checklist.html" class="text-primary underline">Week 1 Checklist</a> and follow it step by step.
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-accent rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">2. Test Everything Twice</h3>
+                            <p class="text-gray-700">
+                                Before you assume something works, test it. Send test alerts. Click your status page. Verify URLs. Trust but verify.
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-secondary rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">3. Document Your Setup</h3>
+                            <p class="text-gray-700">
+                                Write down what you've configured and why. Future you (or a team member) will need this when making changes.
+                            </p>
+                        </div>
+
+                        <div class="bg-white border-2 border-charcoal rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">4. Schedule Maintenance</h3>
+                            <p class="text-gray-700">
+                                Put recurring calendar reminders. Weekly, monthly, quarterly. Make monitoring maintenance a habit, not an afterthought.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- What's Next -->
+                <div class="bg-cream p-8 rounded-xl mb-12">
+                    <h2 class="text-2xl font-bold text-charcoal mb-4">📚 You've Completed the Series!</h2>
+                    <p class="text-gray-700 mb-6">
+                        Congratulations! You've learned everything you need to set up and maintain UptimeRobot like a pro:
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4 mb-6">
+                        <a href="first-5-minutes.html" class="block bg-white p-4 rounded-lg hover:shadow-lg transition">
+                            <p class="font-bold text-charcoal mb-1">Article #1: First 5 Minutes</p>
+                            <p class="text-sm text-gray-600">Basic setup guide</p>
+                        </a>
+                        <a href="monitoring-checklist.html" class="block bg-white p-4 rounded-lg hover:shadow-lg transition">
+                            <p class="font-bold text-charcoal mb-1">Article #2: Monitoring Checklist</p>
+                            <p class="text-sm text-gray-600">What to monitor by business type</p>
+                        </a>
+                        <a href="alert-configuration.html" class="block bg-white p-4 rounded-lg hover:shadow-lg transition">
+                            <p class="font-bold text-charcoal mb-1">Article #3: Alert Configuration</p>
+                            <p class="text-sm text-gray-600">Set up reliable notifications</p>
+                        </a>
+                        <a href="week-1-checklist.html" class="block bg-white p-4 rounded-lg hover:shadow-lg transition">
+                            <p class="font-bold text-charcoal mb-1">Article #4: Week 1 Checklist</p>
+                            <p class="text-sm text-gray-600">Day-by-day progression guide</p>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 text-center">
+                        You're now equipped to monitor your site like a professional. Go forth and sleep soundly! 🎉
+                    </p>
+                </div>
+
+                <!-- Help CTA -->
+                <div class="bg-gradient-to-r from-primary to-accent text-white p-8 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold mb-4">Still Making These Mistakes?</h3>
+                    <p class="mb-6 opacity-90">
+                        Send me your setup and I'll do a free audit. I'll tell you exactly what needs fixing.
+                    </p>
+                    <a href="mailto:amalin.droid@gmail.com?subject=Please Audit My UptimeRobot Setup&body=Hi! Can you review my monitoring setup?%0D%0A%0D%0AMy setup:%0D%0A- Number of monitors: %0D%0A- Alert contacts configured: %0D%0A- Biggest concerns: %0D%0A%0D%0A[Attach screenshots if possible]" 
+                       class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                        Get Free Setup Audit
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SaaSMono</h3>
+                    <p class="text-gray-400 text-sm">Simple website monitoring guides for small businesses and solopreneurs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Onboarding</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="first-5-minutes.html" class="hover:text-white transition">First 5 Minutes</a></li>
+                        <li><a href="monitoring-checklist.html" class="hover:text-white transition">Monitoring Checklist</a></li>
+                        <li><a href="alert-configuration.html" class="hover:text-white transition">Alert Configuration</a></li>
+                        <li><a href="week-1-checklist.html" class="hover:text-white transition">Week 1 Checklist</a></li>
+                        <li><a href="common-mistakes.html" class="hover:text-white transition">Common Mistakes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="../getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="../blog/index.html" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="../onboarding.html" class="hover:text-white transition">Setup Help</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <p class="text-gray-400 text-sm mb-4">Questions? Email me:</p>
+                    <a href="mailto:amalin.droid@gmail.com" class="text-primary hover:text-secondary transition text-sm">amalin.droid@gmail.com</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 SaaSMono. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your complete first week with UptimeRobot. Day-by-day checklist from newbie to confident monitoring expert.">
+    <title>Your First Week with UptimeRobot: Complete Checklist | SaaSMono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E76F51',
+                        secondary: '#F4A261',
+                        accent: '#2A9D8F',
+                        cream: '#FAF3E0',
+                        charcoal: '#264653'
+                    }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5JD8D64KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F5JD8D64KK');
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold text-primary">SaaSMono</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-charcoal hover:text-primary transition">Home</a>
+                    <a href="../getting-started.html" class="text-charcoal hover:text-primary transition">Getting Started</a>
+                    <a href="../blog/index.html" class="text-charcoal hover:text-primary transition">Blog</a>
+                    <a href="../onboarding.html" class="text-primary font-semibold">Setup Help</a>
+                    <a href="../contact.html" class="text-charcoal hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="../index.html" class="block py-2 text-charcoal hover:text-primary transition">Home</a>
+                <a href="../getting-started.html" class="block py-2 text-charcoal hover:text-primary transition">Getting Started</a>
+                <a href="../blog/index.html" class="block py-2 text-charcoal hover:text-primary transition">Blog</a>
+                <a href="../onboarding.html" class="block py-2 text-primary font-semibold">Setup Help</a>
+                <a href="../contact.html" class="block py-2 text-charcoal hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="bg-white">
+        <header class="bg-gradient-to-b from-cream to-white py-12">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="inline-block bg-primary text-white rounded-full px-4 py-1 text-sm font-bold mb-4">
+                    ONBOARDING GUIDE #4
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6 leading-tight">
+                    Your First Week with UptimeRobot: Complete Checklist
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-6">
+                    Go from complete newbie to monitoring expert in just 7 days. This day-by-day guide shows you exactly what to do each day to master UptimeRobot and sleep soundly.
+                </p>
+
+                <div class="flex items-center gap-4 text-gray-600 text-sm">
+                    <span>📅 7 days</span>
+                    <span>•</span>
+                    <span>⏱️ ~20 min/day</span>
+                    <span>•</span>
+                    <span>✅ Step-by-step</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="max-w-4xl mx-auto px-6 py-12">
+            <div class="prose prose-lg max-w-none">
+                
+                <!-- Week Overview -->
+                <div class="bg-gradient-to-r from-primary to-secondary text-white p-8 rounded-xl mb-12">
+                    <h2 class="text-3xl font-bold mb-4 text-white">Your Week at a Glance</h2>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <p class="font-bold mb-2">Days 1-3: Foundation</p>
+                            <p class="opacity-90">Basic setup, monitoring, and alerts</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <p class="font-bold mb-2">Days 4-5: Polish</p>
+                            <p class="opacity-90">Status pages and optimization</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <p class="font-bold mb-2">Days 6-7: Mastery</p>
+                            <p class="opacity-90">Planning and maintenance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 1 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-red-500 to-primary text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Day 1: Basic Setup</h2>
+                                <p class="opacity-90">Get your foundation running</p>
+                            </div>
+                            <div class="text-6xl font-bold opacity-30">1</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">🎯 Today's Goal</p>
+                        <p class="text-gray-700">
+                            Basic monitoring running with verified alerts. By end of day, you'll be monitoring your homepage and will get notified if it goes down.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">1</span>
+                                Sign Up & Verify Email (5 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Create UptimeRobot account</li>
+                                <li>☐ Check email for verification link</li>
+                                <li>☐ Click link to verify</li>
+                                <li>☐ See "Email verified" confirmation</li>
+                            </ul>
+                            <div class="ml-13 mt-4 bg-white p-3 rounded text-sm text-gray-600">
+                                <strong>⚠️ Critical:</strong> Without verification, you'll get ZERO alerts!
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">2</span>
+                                Add Your First Monitor (5 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Click "Add New Monitor"</li>
+                                <li>☐ Choose HTTP(s) monitor type</li>
+                                <li>☐ Enter homepage URL</li>
+                                <li>☐ Name it clearly: "Main Site - Homepage"</li>
+                                <li>☐ Leave interval at 5 minutes</li>
+                                <li>☐ Click Create</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">3</span>
+                                Verify Alert Settings (3 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Go to My Settings → Alert Contacts</li>
+                                <li>☐ Confirm email shows green checkmark</li>
+                                <li>☐ Check "Active" status</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">4</span>
+                                Test Your Setup (2 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Wait 5 minutes for first check</li>
+                                <li>☐ Verify monitor shows "Up" status</li>
+                                <li>☐ Check dashboard displays correctly</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-2">✅ Day 1 Complete When...</p>
+                        <ul class="space-y-2 text-gray-700 ml-4">
+                            <li>✓ Email is verified</li>
+                            <li>✓ Homepage monitor is running and shows "Up"</li>
+                            <li>✓ You understand how to check dashboard</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Day 2 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-orange-500 to-secondary text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Day 2: Expand Monitoring</h2>
+                                <p class="opacity-90">Cover your critical infrastructure</p>
+                            </div>
+                            <div class="text-6xl font-bold opacity-30">2</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">🎯 Today's Goal</p>
+                        <p class="text-gray-700">
+                            Add 3-5 critical pages and SSL monitoring. By end of day, you're monitoring everything that matters for your business.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">1</span>
+                                Identify Critical Pages (10 minutes)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                Review your business type and list pages to monitor:
+                            </p>
+                            <div class="ml-13 bg-white p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-2">Examples by type:</p>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• <strong>E-commerce:</strong> Product pages, cart, checkout</li>
+                                    <li>• <strong>SaaS:</strong> Login, dashboard, API</li>
+                                    <li>• <strong>Service:</strong> Booking, contact form, portfolio</li>
+                                    <li>• <strong>Blog:</strong> Top 5 articles, RSS feed</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">2</span>
+                                Add 3-5 Critical Monitors (15 minutes)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                For each critical page:
+                            </p>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Click "Add New Monitor"</li>
+                                <li>☐ Enter URL</li>
+                                <li>☐ Give descriptive name</li>
+                                <li>☐ Use consistent naming (e.g., "E-commerce - Checkout")</li>
+                                <li>☐ Repeat for each page</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">3</span>
+                                Add SSL Certificate Monitor (3 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Add New Monitor → SSL Certificate</li>
+                                <li>☐ Enter domain (without https://)</li>
+                                <li>☐ Name: "SSL Certificate - Main Domain"</li>
+                                <li>☐ Set alert for 7 days before expiration</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">4</span>
+                                Test Each Monitor (5 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Check dashboard - all should be "Up"</li>
+                                <li>☐ Click each monitor to view details</li>
+                                <li>☐ Verify URLs are correct</li>
+                                <li>☐ Fix any that show errors</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-2">✅ Day 2 Complete When...</p>
+                        <ul class="space-y-2 text-gray-700 ml-4">
+                            <li>✓ 4-6 total monitors running (homepage + 3-5 critical pages)</li>
+                            <li>✓ SSL certificate monitoring enabled</li>
+                            <li>✓ All monitors show "Up" status</li>
+                            <li>✓ Naming is clear and consistent</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Day 3 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-yellow-500 to-accent text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Day 3: Configure Alerts</h2>
+                                <p class="opacity-90">Ensure reliable notifications</p>
+                            </div>
+                            <div class="text-6xl font-bold opacity-30">3</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">🎯 Today's Goal</p>
+                        <p class="text-gray-700">
+                            Set up a reliable alert system. By end of day, you'll have multiple notification channels and tested alerts.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">1</span>
+                                Add SMS Alerts (10 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Go to Alert Contacts</li>
+                                <li>☐ Add Alert Contact → SMS</li>
+                                <li>☐ Enter phone with country code</li>
+                                <li>☐ Verify via SMS code</li>
+                                <li>☐ Assign to 2-3 critical monitors only</li>
+                            </ul>
+                            <div class="ml-13 mt-4 bg-white p-3 rounded text-sm text-gray-600">
+                                <strong>Tip:</strong> Use SMS sparingly on free plan. Reserve for checkout, login, or homepage.
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">2</span>
+                                Set Alert Thresholds (5 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Review each monitor's threshold setting</li>
+                                <li>☐ Set to 2 checks for most monitors</li>
+                                <li>☐ Consider 1 check only for checkout/payment</li>
+                                <li>☐ Use 3 checks for non-critical pages</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">3</span>
+                                Enable Up/Down Alerts (3 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Verify Down alerts enabled (default)</li>
+                                <li>☐ Enable Up alerts for all monitors</li>
+                                <li>☐ Confirm SSL expiration alerts set</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">4</span>
+                                Test Alert System (10 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Send test alert from a monitor</li>
+                                <li>☐ Check email received</li>
+                                <li>☐ Check SMS received (if configured)</li>
+                                <li>☐ Verify alerts not in spam folder</li>
+                                <li>☐ Add alerts@uptimerobot.com to contacts</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">5</span>
+                                Document Your Alert Plan (5 minutes)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                Write down or screenshot:
+                            </p>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Which monitors have SMS alerts</li>
+                                <li>☐ Your threshold settings</li>
+                                <li>☐ Alert contact details</li>
+                                <li>☐ Response procedures</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-2">✅ Day 3 Complete When...</p>
+                        <ul class="space-y-2 text-gray-700 ml-4">
+                            <li>✓ SMS alerts configured for critical monitors</li>
+                            <li>✓ Alert thresholds set appropriately</li>
+                            <li>✓ Test alerts received successfully</li>
+                            <li>✓ Alert plan documented</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Day 4 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-accent to-primary text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Day 4: Create Status Page</h2>
+                                <p class="opacity-90">Add transparency for customers</p>
+                            </div>
+                            <div class="text-6xl font-bold opacity-30">4</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">🎯 Today's Goal</p>
+                        <p class="text-gray-700">
+                            Create a public status page customers can check. Builds trust and reduces "is it just me?" support tickets.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">1</span>
+                                Create Status Page (10 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Go to "Status Pages"</li>
+                                <li>☐ Click "Add New Status Page"</li>
+                                <li>☐ Give it a name (e.g., "Service Status")</li>
+                                <li>☐ Choose friendly URL slug</li>
+                                <li>☐ Select monitors to display (customer-facing only)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">2</span>
+                                Customize Design (10 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Add your logo/brand</li>
+                                <li>☐ Choose color scheme</li>
+                                <li>☐ Write custom message</li>
+                                <li>☐ Add contact information</li>
+                                <li>☐ Preview how it looks</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">3</span>
+                                Get Shareable URL (2 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Copy status page URL</li>
+                                <li>☐ Test it in browser</li>
+                                <li>☐ Bookmark for easy access</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">4</span>
+                                Share with Customers (Optional)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                Consider adding to:
+                            </p>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Website footer</li>
+                                <li>☐ Support/help pages</li>
+                                <li>☐ Email signatures</li>
+                                <li>☐ Social media bio</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-2">✅ Day 4 Complete When...</p>
+                        <ul class="space-y-2 text-gray-700 ml-4">
+                            <li>✓ Status page created and customized</li>
+                            <li>✓ Shows relevant monitors only</li>
+                            <li>✓ URL is shareable and works</li>
+                            <li>✓ Looks professional and branded</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Day 5 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-secondary to-yellow-500 text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Day 5: Review & Optimize</h2>
+                                <p class="opacity-90">Fine-tune your setup</p>
+                            </div>
+                            <div class="text-6xl font-bold opacity-30">5</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">🎯 Today's Goal</p>
+                        <p class="text-gray-700">
+                            Review everything you've set up and optimize. Remove what's unnecessary, add what's missing.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">1</span>
+                                Check Dashboard Daily (5 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ View overall uptime statistics</li>
+                                <li>☐ Check all monitors are "Up"</li>
+                                <li>☐ Review any downtime incidents</li>
+                                <li>☐ Make this a daily habit</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">2</span>
+                                Review Alert History (10 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Check if you received any alerts this week</li>
+                                <li>☐ Were they real issues or false positives?</li>
+                                <li>☐ Adjust thresholds if too many false alarms</li>
+                                <li>☐ Verify you responded appropriately</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">3</span>
+                                Remove Unnecessary Monitors (5 minutes)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                Less is more. Remove monitors that:
+                            </p>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Aren't actually critical</li>
+                                <li>☐ Duplicate other checks</li>
+                                <li>☐ Create alert noise</li>
+                                <li>☐ Were just for testing</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">4</span>
+                                Add Missing Monitors (5 minutes)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                Did you forget anything important?
+                            </p>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Review your business-type checklist</li>
+                                <li>☐ Add any overlooked critical pages</li>
+                                <li>☐ Consider API endpoints</li>
+                                <li>☐ Think about user journey</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">5</span>
+                                Organize with Tags (Optional - 5 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Tag monitors by priority (critical, important, low)</li>
+                                <li>☐ Tag by business type (ecommerce, blog, etc.)</li>
+                                <li>☐ Create logical groupings</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-2">✅ Day 5 Complete When...</p>
+                        <ul class="space-y-2 text-gray-700 ml-4">
+                            <li>✓ Reviewed all monitors and alerts</li>
+                            <li>✓ Removed unnecessary monitors</li>
+                            <li>✓ Added any missing critical monitors</li>
+                            <li>✓ Setup is optimized and clean</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Day 6 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-purple-500 to-accent text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Day 6: Plan for Growth</h2>
+                                <p class="opacity-90">Think long-term</p>
+                            </div>
+                            <div class="text-6xl font-bold opacity-30">6</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">🎯 Today's Goal</p>
+                        <p class="text-gray-700">
+                            Plan your monitoring strategy going forward. Set yourself up for success as your business grows.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">1</span>
+                                Evaluate Pro Features (10 minutes)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                Review if you need to upgrade:
+                            </p>
+                            <div class="ml-13 bg-white p-4 rounded">
+                                <p class="text-sm font-bold text-charcoal mb-2">Consider upgrading if:</p>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Need more frequent checks (1-minute intervals)</li>
+                                    <li>• Need unlimited SMS alerts</li>
+                                    <li>• Want maintenance windows</li>
+                                    <li>• Need advanced reports</li>
+                                    <li>• Have team members to add</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">2</span>
+                                Document Your Setup (15 minutes)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                Create a simple document with:
+                            </p>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ List of all monitors and why they're monitored</li>
+                                <li>☐ Alert contacts and their purpose</li>
+                                <li>☐ Response procedures for downtime</li>
+                                <li>☐ Login credentials (stored securely)</li>
+                                <li>☐ Status page URL</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">3</span>
+                                Set Calendar Reminder (3 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Weekly: Check dashboard (5 min)</li>
+                                <li>☐ Monthly: Review monitors and alerts (15 min)</li>
+                                <li>☐ Quarterly: Optimize and adjust (30 min)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">4</span>
+                                Plan for Site Changes (5 minutes)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                Document process for when you:
+                            </p>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Launch new features → Add monitors</li>
+                                <li>☐ Redesign pages → Update URLs</li>
+                                <li>☐ Change hosting → Test all monitors</li>
+                                <li>☐ Add team members → Share access</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-2">✅ Day 6 Complete When...</p>
+                        <ul class="space-y-2 text-gray-700 ml-4">
+                            <li>✓ Decided on free vs. Pro plan</li>
+                            <li>✓ Setup fully documented</li>
+                            <li>✓ Calendar reminders set</li>
+                            <li>✓ Growth plan in place</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Day 7 -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-green-500 to-accent text-white p-6 rounded-xl mb-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Day 7: Celebrate!</h2>
+                                <p class="opacity-90">You're now a monitoring expert</p>
+                            </div>
+                            <div class="text-6xl font-bold opacity-30">7</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">🎯 Today's Goal</p>
+                        <p class="text-gray-700">
+                            Reflect on what you've accomplished and enjoy the peace of mind. You're now monitoring like a pro!
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">1</span>
+                                Final Check (5 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ All monitors showing "Up"</li>
+                                <li>☐ Alerts working correctly</li>
+                                <li>☐ Status page looks good</li>
+                                <li>☐ Documentation complete</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">2</span>
+                                Share Your Success (Optional - 5 minutes)
+                            </h3>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>☐ Share status page with customers</li>
+                                <li>☐ Tell team members about setup</li>
+                                <li>☐ Update website footer with status link</li>
+                                <li>☐ Add to email signature</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-4 flex items-center">
+                                <span class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">3</span>
+                                Enjoy Peace of Mind (∞ minutes)
+                            </h3>
+                            <p class="text-gray-700 ml-13 mb-3">
+                                You can now:
+                            </p>
+                            <ul class="ml-13 space-y-2 text-gray-700">
+                                <li>✅ Sleep soundly knowing you'll be alerted</li>
+                                <li>✅ Stop manually checking if your site is up</li>
+                                <li>✅ Respond to issues within minutes</li>
+                                <li>✅ Show customers transparency via status page</li>
+                                <li>✅ Focus on growing your business</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-green-500 to-primary text-white p-8 rounded-xl mt-6">
+                        <h3 class="text-2xl font-bold mb-4">🎉 Congratulations!</h3>
+                        <p class="mb-4">
+                            You've completed your first week with UptimeRobot. You're now monitoring your site like a professional, with:
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li>✓ Comprehensive monitoring of critical pages</li>
+                            <li>✓ Reliable multi-channel alerts</li>
+                            <li>✓ Professional status page</li>
+                            <li>✓ Optimized and documented setup</li>
+                            <li>✓ Long-term maintenance plan</li>
+                        </ul>
+                        <p class="text-lg font-bold">
+                            You're no longer wondering "is my site up?" – you KNOW, and you'll be the first to know when something breaks.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Business-Type Specific Checklists -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">📋 Business-Type Specific Checklists</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white border-2 border-primary rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">🛒 E-commerce Extra Tasks</h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>☐ Monitor all checkout flow pages</li>
+                                <li>☐ Add cart abandonment tracking</li>
+                                <li>☐ Monitor payment gateway status</li>
+                                <li>☐ Track inventory pages</li>
+                                <li>☐ Monitor order confirmation emails</li>
+                                <li>☐ Test during high-traffic periods</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-accent rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">💻 SaaS Extra Tasks</h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>☐ Monitor API uptime separately</li>
+                                <li>☐ Track authentication endpoints</li>
+                                <li>☐ Monitor webhook deliveries</li>
+                                <li>☐ Test integrations regularly</li>
+                                <li>☐ Monitor database connections</li>
+                                <li>☐ Track app performance metrics</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-secondary rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">🤝 Service Business Extra Tasks</h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>☐ Monitor booking system</li>
+                                <li>☐ Track contact form submissions</li>
+                                <li>☐ Monitor calendar integrations</li>
+                                <li>☐ Check portfolio page loads</li>
+                                <li>☐ Test email autoresponders</li>
+                                <li>☐ Monitor payment processing</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-charcoal rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-4">📝 Blog/Content Extra Tasks</h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>☐ Monitor RSS feed validity</li>
+                                <li>☐ Track top 10 articles</li>
+                                <li>☐ Monitor email signup forms</li>
+                                <li>☐ Check ad integrations</li>
+                                <li>☐ Monitor comment systems</li>
+                                <li>☐ Track newsletter delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Master Checklist -->
+                <div class="bg-gradient-to-r from-charcoal to-primary text-white p-8 rounded-xl mb-12">
+                    <h2 class="text-2xl font-bold mb-6">✅ Master Checklist: Complete Week 1</h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-bold mb-2">Day 1: Foundation</p>
+                            <div class="space-y-2 ml-4">
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Email verified</label>
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> First monitor running</label>
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Alerts configured</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="font-bold mb-2">Day 2: Expansion</p>
+                            <div class="space-y-2 ml-4">
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> 3-5 critical pages monitored</label>
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> SSL certificate monitored</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="font-bold mb-2">Day 3: Alerts</p>
+                            <div class="space-y-2 ml-4">
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> SMS alerts configured</label>
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Thresholds set</label>
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Alerts tested</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="font-bold mb-2">Day 4: Status Page</p>
+                            <div class="space-y-2 ml-4">
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Status page created</label>
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Customized and branded</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="font-bold mb-2">Day 5: Optimization</p>
+                            <div class="space-y-2 ml-4">
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Setup reviewed</label>
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Unnecessary monitors removed</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="font-bold mb-2">Day 6: Planning</p>
+                            <div class="space-y-2 ml-4">
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Setup documented</label>
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Reminders scheduled</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="font-bold mb-2">Day 7: Celebration</p>
+                            <div class="space-y-2 ml-4">
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Final checks complete</label>
+                                <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Peace of mind achieved!</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What's Next -->
+                <div class="bg-cream p-8 rounded-xl mb-12">
+                    <h2 class="text-2xl font-bold text-charcoal mb-4">📚 Continue Learning</h2>
+                    <p class="text-gray-700 mb-6">
+                        You've mastered the basics! Now learn about common mistakes to avoid:
+                    </p>
+                    <div class="space-y-3">
+                        <a href="common-mistakes.html" class="block bg-white p-4 rounded-lg hover:shadow-lg transition border-2 border-primary">
+                            <p class="font-bold text-primary mb-1">Next: Article #5 - Common Mistakes →</p>
+                            <p class="text-sm text-gray-600">Learn from others' mistakes so you don't make them</p>
+                        </a>
+                        <a href="alert-configuration.html" class="block bg-white p-4 rounded-lg hover:shadow-lg transition">
+                            <p class="font-bold text-charcoal mb-1">← Previous: Alert Configuration</p>
+                            <p class="text-sm text-gray-600">Deep dive into alert setup</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Help CTA -->
+                <div class="bg-gradient-to-r from-accent to-primary text-white p-8 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold mb-4">Need Help with Any Step?</h3>
+                    <p class="mb-6 opacity-90">
+                        Stuck somewhere in your first week? I'm here to help. Free support for readers who signed up through my links.
+                    </p>
+                    <a href="mailto:amalin.droid@gmail.com?subject=Help with Week 1 Setup&body=Hi! I'm on Day __ and need help with:%0D%0A%0D%0A[Describe your issue]%0D%0A%0D%0AWhat I've completed so far: %0D%0AWhat I'm stuck on: " 
+                       class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                        Get Help
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SaaSMono</h3>
+                    <p class="text-gray-400 text-sm">Simple website monitoring guides for small businesses and solopreneurs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Onboarding</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="first-5-minutes.html" class="hover:text-white transition">First 5 Minutes</a></li>
+                        <li><a href="monitoring-checklist.html" class="hover:text-white transition">Monitoring Checklist</a></li>
+                        <li><a href="alert-configuration.html" class="hover:text-white transition">Alert Configuration</a></li>
+                        <li><a href="week-1-checklist.html" class="hover:text-white transition">Week 1 Checklist</a></li>
+                        <li><a href="common-mistakes.html" class="hover:text-white transition">Common Mistakes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="../getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="../blog/index.html" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="../onboarding.html" class="hover:text-white transition">Setup Help</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <p class="text-gray-400 text-sm mb-4">Questions? Email me:</p>
+                    <a href="mailto:amalin.droid@gmail.com" class="text-primary hover:text-secondary transition text-sm">amalin.droid@gmail.com</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 SaaSMono. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

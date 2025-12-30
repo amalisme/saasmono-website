@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to set up UptimeRobot alerts correctly so you actually get notified when your site goes down.">
+    <title>How to Set Up Alerts So You Actually Get Notified | SaaSMono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E76F51',
+                        secondary: '#F4A261',
+                        accent: '#2A9D8F',
+                        cream: '#FAF3E0',
+                        charcoal: '#264653'
+                    }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5JD8D64KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F5JD8D64KK');
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold text-primary">SaaSMono</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-charcoal hover:text-primary transition">Home</a>
+                    <a href="../getting-started.html" class="text-charcoal hover:text-primary transition">Getting Started</a>
+                    <a href="../blog/index.html" class="text-charcoal hover:text-primary transition">Blog</a>
+                    <a href="../onboarding.html" class="text-primary font-semibold">Setup Help</a>
+                    <a href="../contact.html" class="text-charcoal hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="../index.html" class="block py-2 text-charcoal hover:text-primary transition">Home</a>
+                <a href="../getting-started.html" class="block py-2 text-charcoal hover:text-primary transition">Getting Started</a>
+                <a href="../blog/index.html" class="block py-2 text-charcoal hover:text-primary transition">Blog</a>
+                <a href="../onboarding.html" class="block py-2 text-primary font-semibold">Setup Help</a>
+                <a href="../contact.html" class="block py-2 text-charcoal hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="bg-white">
+        <header class="bg-gradient-to-b from-cream to-white py-12">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="inline-block bg-primary text-white rounded-full px-4 py-1 text-sm font-bold mb-4">
+                    ONBOARDING GUIDE #3
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6 leading-tight">
+                    How to Set Up Alerts So You Actually Get Notified
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-6">
+                    Monitoring is useless if alerts don't reach you. Here's how to configure notifications correctly, avoid alert fatigue, and sleep soundly knowing you'll be woken up when it matters.
+                </p>
+
+                <div class="flex items-center gap-4 text-gray-600 text-sm">
+                    <span>⏱️ 12 minutes</span>
+                    <span>•</span>
+                    <span>🔔 Essential</span>
+                    <span>•</span>
+                    <span>✅ Tested strategies</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="max-w-4xl mx-auto px-6 py-12">
+            <div class="prose prose-lg max-w-none">
+                
+                <!-- Introduction -->
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-12">
+                    <p class="text-lg font-bold text-charcoal mb-2">
+                        🚨 Real Story: The Alert That Never Came
+                    </p>
+                    <p class="text-gray-700">
+                        A small e-commerce business had UptimeRobot set up. Their site went down for 8 hours. They lost thousands in sales. Why? The owner never verified his email address. All alerts went to /dev/null. Don't let this be you.
+                    </p>
+                </div>
+
+                <!-- Alert Contacts Overview -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">Understanding Alert Contacts</h2>
+                        <p class="opacity-90">Who gets notified when something breaks</p>
+                    </div>
+
+                    <p class="text-gray-700 mb-6">
+                        Alert Contacts are the people or services that receive notifications. Think of them as your emergency contact list. When a monitor goes down, UptimeRobot notifies everyone on this list.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">✅ What Works</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• Verified email addresses</li>
+                                <li>• SMS for critical alerts</li>
+                                <li>• Slack for team coordination</li>
+                                <li>• Multiple channels for redundancy</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-red-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">❌ What Doesn't Work</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• Unverified email (alerts never arrive)</li>
+                                <li>• Using only one contact method</li>
+                                <li>• Email addresses you rarely check</li>
+                                <li>• Phone numbers with typos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Email Alerts -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-accent to-primary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">Email Alerts (Start Here)</h2>
+                        <p class="opacity-90">Your primary notification method</p>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">✅ Always Start with Email</p>
+                        <p class="text-gray-700">
+                            Email is free, reliable, and works everywhere. It should be your foundation. Add other methods later, but nail email first.
+                        </p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Step-by-Step Email Setup</h3>
+
+                    <div class="space-y-4">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <p class="font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
+                                Go to Alert Contacts
+                            </p>
+                            <p class="text-gray-700 ml-11">
+                                Dashboard → My Settings → Alert Contacts
+                            </p>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <p class="font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
+                                Check Your Primary Email
+                            </p>
+                            <p class="text-gray-700 ml-11 mb-3">
+                                Your signup email is already listed. Look for a green checkmark.
+                            </p>
+                            <div class="ml-11 bg-white p-3 rounded">
+                                <p class="text-sm text-green-600 mb-2">✓ Green checkmark = Verified and active</p>
+                                <p class="text-sm text-red-600">✗ No checkmark = NOT verified (fix this immediately!)</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <p class="font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">3</span>
+                                Add Additional Email (Optional)
+                            </p>
+                            <p class="text-gray-700 ml-11 mb-3">
+                                Want alerts at multiple addresses? Click "Add Alert Contact"
+                            </p>
+                            <ul class="ml-11 text-gray-700 space-y-2">
+                                <li>• Choose "Email"</li>
+                                <li>• Enter email address</li>
+                                <li>• Give it a friendly name</li>
+                                <li>• Verify via email</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-3">💡 Pro Tip: Use a Dedicated Email</p>
+                        <p class="text-gray-700 mb-3">
+                            Create a dedicated email like alerts@yourcompany.com that:
+                        </p>
+                        <ul class="text-gray-700 space-y-2 ml-6">
+                            <li>• Forwards to your main inbox</li>
+                            <li>• Has a special filter/label</li>
+                            <li>• Makes it easy to track alert history</li>
+                            <li>• Can be shared with team members</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- SMS Alerts -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-secondary to-accent text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">SMS Alerts (For Critical Issues)</h2>
+                        <p class="opacity-90">When you need to wake up at 3 AM</p>
+                    </div>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">⚠️ When to Use SMS</p>
+                        <p class="text-gray-700">
+                            SMS alerts are limited on the free plan, so use them strategically for your most critical monitors only. Email might get lost in your inbox, but SMS wakes you up.
+                        </p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Setting Up SMS Alerts</h3>
+
+                    <div class="space-y-4">
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h4 class="font-bold text-charcoal mb-3">1. Add SMS Contact</h4>
+                            <ul class="text-gray-700 space-y-2 ml-4">
+                                <li>• Alert Contacts → Add Alert Contact</li>
+                                <li>• Choose "SMS"</li>
+                                <li>• Enter phone number with country code</li>
+                                <li>• Example: +1 555-123-4567 (US)</li>
+                                <li>• Click "Create Alert Contact"</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h4 class="font-bold text-charcoal mb-3">2. Verify Your Number</h4>
+                            <p class="text-gray-700 mb-3">
+                                You'll receive a verification code via SMS. Enter it to activate.
+                            </p>
+                            <div class="bg-blue-50 p-3 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>Tip:</strong> Keep your phone nearby during setup. The code expires quickly.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h4 class="font-bold text-charcoal mb-3">3. Assign to Critical Monitors Only</h4>
+                            <p class="text-gray-700 mb-3">
+                                Don't add SMS to every monitor. Be selective:
+                            </p>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-green-600 mb-2">✓ Use SMS for:</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• E-commerce checkout page</li>
+                                    <li>• SaaS login page</li>
+                                    <li>• Payment processing systems</li>
+                                    <li>• Main homepage</li>
+                                </ul>
+                                <p class="text-sm font-bold text-red-600 mt-3 mb-2">✗ Don't use SMS for:</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• Blog posts</li>
+                                    <li>• About pages</li>
+                                    <li>• Secondary features</li>
+                                    <li>• Test monitors</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-2">💰 Free Plan Limits</p>
+                        <p class="text-gray-700">
+                            Free plan includes limited SMS. For unlimited SMS alerts, consider upgrading to Pro. Calculate if the cost of downtime exceeds the upgrade cost (it usually does).
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Slack Integration -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">Slack Integration (For Teams)</h2>
+                        <p class="opacity-90">Coordinate team response in real-time</p>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">✅ Perfect If You Have a Team</p>
+                        <p class="text-gray-700">
+                            Slack alerts create visibility. Everyone sees the issue at once. Someone can acknowledge they're handling it. No duplicate work or confusion.
+                        </p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Quick Slack Setup</h3>
+
+                    <div class="space-y-4">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <p class="font-bold text-charcoal mb-3">1. Create a Slack Channel</p>
+                            <p class="text-gray-700 mb-3">
+                                Make a dedicated channel: #uptime-alerts or #site-monitoring
+                            </p>
+                            <div class="bg-white p-3 rounded text-sm text-gray-600">
+                                <strong>Why:</strong> Keeps alerts organized and prevents spam in general channels
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <p class="font-bold text-charcoal mb-3">2. Connect UptimeRobot</p>
+                            <ul class="text-gray-700 space-y-2 ml-4">
+                                <li>• Alert Contacts → Add Alert Contact</li>
+                                <li>• Choose "Slack"</li>
+                                <li>• Follow authorization flow</li>
+                                <li>• Select your channel</li>
+                                <li>• Save</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <p class="font-bold text-charcoal mb-3">3. Test the Integration</p>
+                            <p class="text-gray-700">
+                                Send a test alert to verify messages appear in Slack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-3">💡 Slack Best Practices</p>
+                        <ul class="text-gray-700 space-y-2">
+                            <li><strong>Pin important info:</strong> Pin response procedures to channel</li>
+                            <li><strong>Set expectations:</strong> Define who responds when</li>
+                            <li><strong>Use threads:</strong> Discuss solutions in threads to keep channel clean</li>
+                            <li><strong>Emoji reactions:</strong> Use 👀 (eyes) when handling, ✅ (check) when resolved</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Webhook Alerts -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-charcoal to-primary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">Webhook Alerts (Advanced)</h2>
+                        <p class="opacity-90">For custom integrations and automation</p>
+                    </div>
+
+                    <p class="text-gray-700 mb-6">
+                        Webhooks let you send alerts to custom endpoints. Use this for:
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-3">Use Cases:</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• Custom dashboards</li>
+                                <li>• Incident management systems</li>
+                                <li>• Automated response scripts</li>
+                                <li>• Custom logging/analytics</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h3 class="font-bold text-charcoal mb-3">Popular Integrations:</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• PagerDuty</li>
+                                <li>• Discord</li>
+                                <li>• Microsoft Teams</li>
+                                <li>• Zapier workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
+                        <p class="font-bold text-charcoal mb-2">⚠️ Technical Knowledge Required</p>
+                        <p class="text-gray-700">
+                            Webhooks require coding/technical setup. If you're non-technical, stick with email, SMS, and Slack for now.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Alert Threshold Settings -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-secondary to-primary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">Alert Threshold Settings</h2>
+                        <p class="opacity-90">Prevent false alarms and alert fatigue</p>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">🚨 The Problem with Instant Alerts</p>
+                        <p class="text-gray-700">
+                            If you alert on the first failed check, you'll get false alarms from temporary network blips, brief server restarts, and random internet hiccups. This leads to alert fatigue (you start ignoring them).
+                        </p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Understanding Thresholds</h3>
+
+                    <div class="space-y-6">
+                        <div class="bg-white border-2 border-primary rounded-xl p-6">
+                            <h4 class="text-xl font-bold text-charcoal mb-3">What Are Thresholds?</h4>
+                            <p class="text-gray-700 mb-3">
+                                A threshold is how many consecutive failed checks must occur before an alert is sent. Think of it as a filter for false positives.
+                            </p>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>Example:</strong> If threshold = 2, and check interval = 5 minutes:<br>
+                                    1st check fails (0 minutes) → No alert<br>
+                                    2nd check fails (5 minutes) → Alert sent<br>
+                                    Total time before alert: 5 minutes
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h4 class="text-xl font-bold text-charcoal mb-3">Recommended Threshold Settings</h4>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-green-50 p-4 rounded">
+                                    <p class="font-bold text-charcoal mb-2">✓ Best for Most Cases: 2 Checks</p>
+                                    <p class="text-gray-700 text-sm">
+                                        Filters out random blips but still alerts quickly. With 5-minute intervals, you're notified within 5-10 minutes of real downtime.
+                                    </p>
+                                </div>
+
+                                <div class="bg-blue-50 p-4 rounded">
+                                    <p class="font-bold text-charcoal mb-2">3 Checks (Conservative)</p>
+                                    <p class="text-gray-700 text-sm">
+                                        Use for less critical monitors or if you're getting too many false positives. Takes 10-15 minutes to alert.
+                                    </p>
+                                </div>
+
+                                <div class="bg-red-50 p-4 rounded">
+                                    <p class="font-bold text-charcoal mb-2">1 Check (Instant, Not Recommended)</p>
+                                    <p class="text-gray-700 text-sm">
+                                        Only use for EXTREMELY critical systems where every second counts. Expect false alarms.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h4 class="text-xl font-bold text-charcoal mb-3">How to Configure</h4>
+                            <p class="text-gray-700 mb-3">
+                                You can set this per monitor or use the default for all:
+                            </p>
+                            <ul class="text-gray-700 space-y-2 ml-4">
+                                <li>• Edit monitor → Advanced Settings</li>
+                                <li>• Look for "Alert threshold"</li>
+                                <li>• Set to 2 (recommended default)</li>
+                                <li>• Save</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- When to Get Alerted -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-accent to-secondary text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">When to Get Alerted</h2>
+                        <p class="opacity-90">Choose your notification triggers</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white border-2 border-red-300 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">!</span>
+                                Down Alerts (ALWAYS Enable)
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Get notified when your site goes down. This is non-negotiable.
+                            </p>
+                            <div class="bg-red-50 p-4 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>Default:</strong> Enabled for all monitors<br>
+                                    <strong>Action:</strong> Keep this on. Always.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-green-300 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">✓</span>
+                                Up Alerts (Recommended)
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Get notified when your site comes back online. Confirms the issue is resolved.
+                            </p>
+                            <div class="bg-green-50 p-4 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>Why useful:</strong> Know when to stop panicking. Especially helpful at 3 AM.<br>
+                                    <strong>Action:</strong> Enable this. Peace of mind is worth it.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-yellow-300 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">🔒</span>
+                                SSL Expiration Alerts
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Get warned before your SSL certificate expires (typically 7 days before).
+                            </p>
+                            <div class="bg-yellow-50 p-4 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>Why critical:</strong> Expired SSL = "Not Secure" warnings = Lost customers<br>
+                                    <strong>Action:</strong> Enable for all SSL monitors. Set threshold to 7+ days.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-blue-300 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-charcoal mb-3 flex items-center">
+                                <span class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">🔍</span>
+                                Keyword Monitoring Alerts (Advanced)
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Alert when specific text appears (or disappears) from a page.
+                            </p>
+                            <div class="bg-blue-50 p-4 rounded">
+                                <p class="text-sm text-gray-700 mb-2">
+                                    <strong>Use cases:</strong>
+                                </p>
+                                <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                    <li>• "Out of stock" appears on product page</li>
+                                    <li>• "Error" appears on checkout</li>
+                                    <li>• API returns {"status":"error"}</li>
+                                    <li>• Database connection message changes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Avoiding Alert Fatigue -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-primary to-charcoal text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">Avoiding Alert Fatigue</h2>
+                        <p class="opacity-90">Stay responsive without getting overwhelmed</p>
+                    </div>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">⚠️ What Is Alert Fatigue?</p>
+                        <p class="text-gray-700">
+                            When you get so many alerts that you start ignoring them. This defeats the entire purpose of monitoring. You'll miss real emergencies because you're drowning in noise.
+                        </p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Prevention Strategies</h3>
+
+                    <div class="space-y-6">
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h4 class="font-bold text-charcoal mb-3">1. Don't Over-Monitor</h4>
+                            <p class="text-gray-700 mb-3">
+                                More monitors ≠ better. Only monitor what matters.
+                            </p>
+                            <div class="bg-cream p-4 rounded">
+                                <p class="text-sm font-bold text-green-600 mb-2">✓ Do Monitor:</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• Revenue-generating pages</li>
+                                    <li>• Critical user flows</li>
+                                    <li>• Authentication systems</li>
+                                </ul>
+                                <p class="text-sm font-bold text-red-600 mt-3 mb-2">✗ Don't Monitor:</p>
+                                <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                    <li>• Every single blog post</li>
+                                    <li>• Static pages that rarely change</li>
+                                    <li>• Internal admin pages (unless revenue-critical)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h4 class="font-bold text-charcoal mb-3">2. Group Alerts Logically</h4>
+                            <p class="text-gray-700 mb-3">
+                                Use different alert contacts for different priority levels:
+                            </p>
+                            <div class="bg-cream p-4 rounded">
+                                <ul class="space-y-2 text-gray-700 text-sm">
+                                    <li><strong>Critical (SMS + Email):</strong> Checkout, login, main systems</li>
+                                    <li><strong>Important (Email only):</strong> Product pages, customer-facing features</li>
+                                    <li><strong>Low Priority (Email to team channel):</strong> Nice-to-have pages</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h4 class="font-bold text-charcoal mb-3">3. Set Up Maintenance Windows (Pro Feature)</h4>
+                            <p class="text-gray-700 mb-3">
+                                Schedule planned maintenance? Silence alerts during these windows so you don't get false alarms.
+                            </p>
+                            <div class="bg-blue-50 p-3 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>Example:</strong> Server updates every Sunday 2-4 AM? Create a maintenance window. No alerts during this time.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-6">
+                            <h4 class="font-bold text-charcoal mb-3">4. Weekly Alert Review</h4>
+                            <p class="text-gray-700 mb-3">
+                                Every week, review your alerts:
+                            </p>
+                            <ul class="text-gray-700 space-y-2 ml-4">
+                                <li>• Are you getting too many false positives? Increase threshold.</li>
+                                <li>• Getting alerts for pages that don't matter? Remove monitors.</li>
+                                <li>• Not getting critical alerts? Check contact verification.</li>
+                                <li>• Adjust and optimize continuously</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testing Your Alerts -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-secondary to-accent text-white p-6 rounded-xl mb-6">
+                        <h2 class="text-3xl font-bold mb-2">Testing Your Alert Setup</h2>
+                        <p class="opacity-90">Verify everything works before you need it</p>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
+                        <p class="font-bold text-charcoal mb-2">🚨 CRITICAL: Always Test!</p>
+                        <p class="text-gray-700">
+                            "I set up alerts" means nothing until you've verified they actually reach you. Test now, while there's no emergency.
+                        </p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">How to Test Alerts</h3>
+
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h4 class="font-bold text-charcoal mb-3">Method 1: Use Test Feature (Easiest)</h4>
+                            <ul class="text-gray-700 space-y-2 ml-4">
+                                <li>1. Go to a monitor</li>
+                                <li>2. Click "Test Alert"</li>
+                                <li>3. Check email/SMS/Slack</li>
+                                <li>4. Verify you received it</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h4 class="font-bold text-charcoal mb-3">Method 2: Create a Test Monitor</h4>
+                            <p class="text-gray-700 mb-3">
+                                Monitor a URL you control and can break temporarily:
+                            </p>
+                            <ul class="text-gray-700 space-y-2 ml-4">
+                                <li>1. Create a simple HTML page on your site: /test-alert.html</li>
+                                <li>2. Add it as a monitor in UptimeRobot</li>
+                                <li>3. Delete or rename the page</li>
+                                <li>4. Wait for alert (should come within 5-10 minutes)</li>
+                                <li>5. Restore the page</li>
+                                <li>6. Verify you get "Up" alert</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl">
+                            <h4 class="font-bold text-charcoal mb-3">Method 3: Check Spam Folder</h4>
+                            <p class="text-gray-700 mb-3">
+                                If you're not receiving alerts:
+                            </p>
+                            <ul class="text-gray-700 space-y-2 ml-4">
+                                <li>• Check spam/junk folder</li>
+                                <li>• Add UptimeRobot to safe senders</li>
+                                <li>• Whitelist: alerts@uptimerobot.com</li>
+                                <li>• Check email filters</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded mt-6">
+                        <p class="font-bold text-charcoal mb-2">✅ Checklist: Testing Complete When...</p>
+                        <div class="space-y-2 ml-4">
+                            <label class="flex items-center text-gray-700">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>Received test "Down" alert via email</span>
+                            </label>
+                            <label class="flex items-center text-gray-700">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>Received test "Up" alert via email</span>
+                            </label>
+                            <label class="flex items-center text-gray-700">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>Received SMS alert (if configured)</span>
+                            </label>
+                            <label class="flex items-center text-gray-700">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>Slack notification appeared (if configured)</span>
+                            </label>
+                            <label class="flex items-center text-gray-700">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>All alerts came within expected timeframe</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Real Examples -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-charcoal mb-6">Real-World Alert Configurations</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-cream p-6 rounded-xl border-l-4 border-primary">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">👤 Solo Founder</h3>
+                            <div class="space-y-3">
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">Email:</p>
+                                    <p class="text-gray-600 text-sm">Personal email for all monitors</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">SMS:</p>
+                                    <p class="text-gray-600 text-sm">Personal phone for critical monitors only (checkout, login)</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">Threshold:</p>
+                                    <p class="text-gray-600 text-sm">2 checks for most monitors, 1 check for checkout</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl border-l-4 border-accent">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">👥 Small Team (3-5 People)</h3>
+                            <div class="space-y-3">
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">Slack:</p>
+                                    <p class="text-gray-600 text-sm">#uptime-alerts channel for all monitors</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">SMS:</p>
+                                    <p class="text-gray-600 text-sm">Owner's phone for critical monitors (after hours)</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">Email:</p>
+                                    <p class="text-gray-600 text-sm">Team email (alerts@company.com) as backup</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">Threshold:</p>
+                                    <p class="text-gray-600 text-sm">2 checks standard, 3 checks for non-critical</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-cream p-6 rounded-xl border-l-4 border-secondary">
+                            <h3 class="text-xl font-bold text-charcoal mb-3">🏢 Agency (Multiple Clients)</h3>
+                            <div class="space-y-3">
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">Separate Contacts Per Client:</p>
+                                    <p class="text-gray-600 text-sm">client-a@agency.com, client-b@agency.com (auto-forward to support)</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">Slack:</p>
+                                    <p class="text-gray-600 text-sm">Different channels per client: #client-a-alerts, #client-b-alerts</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">SMS:</p>
+                                    <p class="text-gray-600 text-sm">On-call phone rotates weekly</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-700 text-sm mb-1">Tags:</p>
+                                    <p class="text-gray-600 text-sm">Organize monitors by client for easy filtering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Final Checklist -->
+                <div class="bg-gradient-to-r from-primary to-secondary text-white p-8 rounded-xl mb-12">
+                    <h2 class="text-2xl font-bold mb-4">✅ Complete Alert Setup Checklist</h2>
+                    <div class="space-y-3">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Email verified (green checkmark visible)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>SMS added for critical monitors (optional but recommended)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Slack connected (if using for team)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Alert threshold set to 2 checks (or appropriate level)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Down alerts enabled for all monitors</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Up alerts enabled (recommended)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>SSL expiration alerts configured</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Test alerts sent and received successfully</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3 w-5 h-5">
+                            <span>Spam folder checked (alerts not going to junk)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- What's Next -->
+                <div class="bg-cream p-8 rounded-xl mb-12">
+                    <h2 class="text-2xl font-bold text-charcoal mb-4">📚 Continue Learning</h2>
+                    <p class="text-gray-700 mb-6">
+                        Your alerts are configured. Now let's map out your complete first week:
+                    </p>
+                    <div class="space-y-3">
+                        <a href="week-1-checklist.html" class="block bg-white p-4 rounded-lg hover:shadow-lg transition border-2 border-primary">
+                            <p class="font-bold text-primary mb-1">Next: Article #4 - Week 1 Checklist →</p>
+                            <p class="text-sm text-gray-600">Day-by-day guide from newbie to confident</p>
+                        </a>
+                        <a href="monitoring-checklist.html" class="block bg-white p-4 rounded-lg hover:shadow-lg transition">
+                            <p class="font-bold text-charcoal mb-1">← Previous: Monitoring Checklist</p>
+                            <p class="text-sm text-gray-600">What pages to monitor</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Help CTA -->
+                <div class="bg-gradient-to-r from-accent to-primary text-white p-8 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold mb-4">Want Me to Review Your Alert Setup?</h3>
+                    <p class="mb-6 opacity-90">
+                        I'll check your configuration for free if you signed up through my links. Send me screenshots and I'll give feedback.
+                    </p>
+                    <a href="mailto:amalin.droid@gmail.com?subject=Please Review My Alert Setup&body=Hi! Can you review my alert configuration?%0D%0A%0D%0ASetup details:%0D%0A- Email alerts: %0D%0A- SMS alerts: %0D%0A- Threshold settings: %0D%0A%0D%0A[Attach screenshots]" 
+                       class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                        Get Free Review
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SaaSMono</h3>
+                    <p class="text-gray-400 text-sm">Simple website monitoring guides for small businesses and solopreneurs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Onboarding</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="first-5-minutes.html" class="hover:text-white transition">First 5 Minutes</a></li>
+                        <li><a href="monitoring-checklist.html" class="hover:text-white transition">Monitoring Checklist</a></li>
+                        <li><a href="alert-configuration.html" class="hover:text-white transition">Alert Configuration</a></li>
+                        <li><a href="week-1-checklist.html" class="hover:text-white transition">Week 1 Checklist</a></li>
+                        <li><a href="common-mistakes.html" class="hover:text-white transition">Common Mistakes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="../getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="../blog/index.html" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="../onboarding.html" class="hover:text-white transition">Setup Help</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <p class="text-gray-400 text-sm mb-4">Questions? Email me:</p>
+                    <a href="mailto:amalin.droid@gmail.com" class="text-primary hover:text-secondary transition text-sm">amalin.droid@gmail.com</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 SaaSMono. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
